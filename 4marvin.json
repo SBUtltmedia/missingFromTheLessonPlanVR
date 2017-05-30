@@ -1,0 +1,233 @@
+{
+    "spheres": [
+        {
+            "leftImg": "marvin/R0010920.JPG",
+            "markers": [
+                {
+                    "text": "Mary Pennington",
+                    "type": "image",
+                    "src" : "img/marvin/posters/MaryPenningtonPoster.JPG",
+                    "x": -7.463,
+                    "y": -4.855,
+                    "z": 6.026
+                },
+                {
+                    "number": 1,
+                    "text": "Stand here",
+                    "type": "scene",
+                    "x": -2.368,
+                    "y": -8.177,
+                    "z": 6.922
+                }
+            ]
+        },
+        {
+            "leftImg": "marvin/R0010909.JPG",
+            "markers": [
+                {
+                    "text": "You Found Wolfie!",
+                    "type": "info",
+                    "x": -9.508,
+                    "y": -6.518,
+                    "z": 4.047
+                },
+                {
+                    "number": 0,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": 3.116,
+                    "y": -7.060,
+                    "z": 7.736
+                },
+                {
+                    "number": 2,
+                    "text": "Stand here",
+                    "type": "scene",
+                    "x": 7.495,
+                    "y": 7.491,
+                    "z": 7.258
+                },
+                {
+                    "number": 5,
+                    "text": "Stand here",
+                    "type": "scene",
+                    "x": 8.156,
+                    "y": 30.768,
+                    "z": 7.258
+                }
+            ]
+        },
+        {
+            "leftImg": "marvin/R0010918.JPG",
+            "markers": [
+                {
+                    "text": "You Found Wolfie!",
+                    "type": "info",
+                    "x": -1.601,
+                    "y": 8.160,
+                    "z": 4.372
+                },
+                {
+                    "number": 1,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": 4.825,
+                    "y": 10.174,
+                    "z": 7.736
+                },
+                {
+                    "number": 3,
+                    "text": "Stand here",
+                    "type": "scene",
+                    "x": 7.828,
+                    "y": 1.551,
+                    "z": 7.247
+                },
+                {
+                    "number": 4,
+                    "text": "Stand here",
+                    "type": "scene",
+                    "x": 7.522,
+                    "y": -16.048,
+                    "z": 7.247
+                }
+            ]
+        },
+        {
+            "leftImg": "marvin/R0010910.JPG",
+            "markers": [
+                {
+                    "text": "You Found Wolfie!",
+                    "type": "info",
+                    "x": -9.151,
+                    "y": -1.579,
+                    "z": 7.302
+                },
+                {
+                    "number": 2,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": 4.690,
+                    "y": -2.728,
+                    "z": 7.736
+                },
+                {
+                    "number": 1,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": -8.213,
+                    "y": -10.062,
+                    "z": 7.736
+                },
+                {
+                    "number": 4,
+                    "text": "Step forward",
+                    "type": "scene",
+                    "x": 6.199,
+                    "y": 19.519,
+                    "z": 7.736
+                }
+            ]
+        },
+        {
+            "leftImg": "marvin/R0010911.JPG",
+            "markers": [
+                {
+                    "text": "You Found Wolfie!",
+                    "type": "info",
+                    "x": -9.151,
+                    "y": -0.933,
+                    "z": 6.172
+                },
+                {
+                    "number": 3,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": 13.292,
+                    "y": -8.745,
+                    "z": 7.736
+                },
+                {
+                    "number": 5,
+                    "text": "Step forward",
+                    "type": "scene",
+                    "x": 0.917,
+                    "y": 6.979,
+                    "z": 9.252
+                },
+                {
+                    "number": 6,
+                    "text": "Move here",
+                    "type": "scene",
+                    "x": 10.346,
+                    "y": 1.828,
+                    "z": 9.173
+                }
+            ]
+        },
+        {
+            "leftImg": "marvin/R0010912.JPG",
+            "markers": [
+                {
+                    "text": "You Found Wolfie!",
+                    "type": "info",
+                    "x": -9.141,
+                    "y": -0.227,
+                    "z": 5.875
+                },
+                {
+                    "number": 4,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": -0.426,
+                    "y": -7.610,
+                    "z": 10.246
+                },
+                {
+                    "number": 6,
+                    "text": "Move here",
+                    "type": "scene",
+                    "x": 7.212,
+                    "y": 2.514,
+                    "z": 10.246
+                },
+                {
+                    "number": 2,
+                    "text": "Move back here",
+                    "type": "scene",
+                    "x": 26.406,
+                    "y": -6.382,
+                    "z": 9.193
+                }
+            ]
+        },
+        {
+            "leftImg": "marvin/R0010919.JPG",
+            "markers": [
+                {
+                    "text": "You Found Wolfie!",
+                    "type": "info",
+                    "x": 4.366,
+                    "y": 11.166,
+                    "z": 5.987
+                },
+                {
+                    "number": 5,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": -4.071,
+                    "y": -7.828,
+                    "z": 10.246
+                },
+                {
+                    "number": 3,
+                    "text": "Step back",
+                    "type": "scene",
+                    "x": 19.462,
+                    "y": 15.314,
+                    "z": 10.246
+                }
+            ]
+        }
+    ]
+}
