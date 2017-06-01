@@ -2,12 +2,7 @@ var startingRoom = "4marvin"
 var sceneEl;
 $(function () {
     loadSphere(startingRoom, 0);
-    var markers = document.getElementById('markers')
-    markers.setAttribute('rotation', {
-        x: 90,
-        y: 0,
-        z: 180
-    });
+   
 
     sceneEl = document.querySelector('a-scene');
 });
@@ -90,15 +85,20 @@ function loadSphere(room, num) {
           eX = $(mkr).data("x");
           eY = $(mkr).data("y");
           eZ = $(mkr).data("z");
-          var spin=Math.atan2(eX,eZ) * (180 / Math.PI)+180;
+          var spinLeftRight=Math.atan2(eX,eZ) * (180 / Math.PI)+180;
+        var mag= Math.sqrt(eX*eX+eZ*eZ)
+          var spinUpDown=Math.atan2(mag,eY) * (180 / Math.PI)+180;
+        // var spinUpDown=0;
+            console.log(spinLeftRight, spinUpDown);
           var testObject = document.createElement('a-image');
           testObject.setAttribute('src', $(mkr).data("src"));
           testObject.setAttribute('rotation', {
-          z: 170,
-          y:spin
+          x: spinUpDown+270,
+          y: spinLeftRight+180,
+          z: 180,
           });
-          testObject.setAttribute('height', "4px");
-          testObject.setAttribute('width', "3px");
+          testObject.setAttribute('height', 50);
+          testObject.setAttribute('width', 50);
           testObject.setAttribute('position', {
             x: eX,
             y: eY,
