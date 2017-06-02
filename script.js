@@ -2,7 +2,7 @@ var startingRoom = "4marvin"
 var sceneEl;
 $(function () {
     loadSphere(startingRoom, 0);
-   
+
 
     sceneEl = document.querySelector('a-scene');
 });
@@ -53,6 +53,8 @@ function loadSphere(room, num) {
                 }
             }
             if ($(evt.target).data("type") == "image") {
+
+                //Old code with Dom manipulation
                 zoomIn(evt.target);
             }
         });
@@ -81,14 +83,19 @@ function loadSphere(room, num) {
         }
 
         function zoomIn(mkr) {
+console.log(  $("#posterHud"))
+          $("#posterHud").attr('src', $(mkr).data("src"));
+          $("#posterHud").attr('visible', "true");
+
+          /**
           console.log($(mkr).data("z"))
           eX = $(mkr).data("x");
           eY = $(mkr).data("y");
           eZ = $(mkr).data("z");
           var spinLeftRight=Math.atan2(eX,eZ) * (180 / Math.PI)+180;
-        var mag= Math.sqrt(eX*eX+eZ*eZ)
+          var mag= Math.sqrt(eX*eX+eZ*eZ)
           var spinUpDown=Math.atan2(mag,eY) * (180 / Math.PI)+180;
-        // var spinUpDown=0;
+          // var spinUpDown=0;
             console.log(spinLeftRight, spinUpDown);
           var testObject = document.createElement('a-image');
           testObject.setAttribute('src', $(mkr).data("src"));
@@ -106,6 +113,7 @@ function loadSphere(room, num) {
           });
 
           $("#markers").prepend(testObject)
+          **/
         }
 
         function makeMarker(mkr, id) {

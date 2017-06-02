@@ -6,66 +6,18 @@
                 {
                     "text": "Mary Pennington",
                     "type": "image",
-                    "src" : "img/marvin/posters/MaryPenningtonPoster.JPG",
+                    "src" : "#MaryPenningtonPoster",
                     "x": 7.2,
                     "y": -5,
                     "z": 4.85
                 },
                 {
-                    "text": "0,10,0",
-                    "type": "image",
-                    "src" : "img/marvin/posters/orientation.png",
-                    "x": 0.01,
-                    "y": 10,
-                    "z": 0
-                },
-                {
-                    "text": "10,0,0",
-                    "type": "image",
-                    "src" : "img/marvin/posters/orientation.png",
-                    "x": 10,
-                    "y": 0,
-                    "z": 0
-                },
-                {
-                    "text": "0,0,10",
-                    "type": "image",
-                    "src" : "img/marvin/posters/orientation.png",
-                    "x": 0,
-                    "y": 0,
-                    "z": 10
-                },
-                {
-                    "text": "0,-10,0",
-                    "type": "image",
-                    "src" : "img/marvin/posters/orientation.png",
-                    "x": 0.01,
-                    "y": -10,
-                    "z": 0
-                },
-                {
-                    "text": "-10,0,0",
-                    "type": "image",
-                    "src" : "img/marvin/posters/orientation.png",
-                    "x": -10,
-                    "y": 0,
-                    "z": 0
-                },
-                {
-                    "text": "0,0,-10",
-                    "type": "image",
-                    "src" : "img/marvin/posters/orientation.png",
-                    "x": 0,
-                    "y": 0,
-                    "z": -10
-                },
-                {
                     "number": 1,
                     "text": "Stand here",
                     "type": "scene",
-                    "x": -0.5,
+                    "x": -2.368,
                     "y": -8.177,
-                    "z": 8
+                    "z": 6.922
                 }
             ]
         },

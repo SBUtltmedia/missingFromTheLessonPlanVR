@@ -15,6 +15,13 @@
 <body>
     <a-scene antialias="true">
 
+    <a-assets>
+      <img id="MaryPenningtonPoster" src="img/marvin/posters/MaryPenningtonPoster.JPG">
+      <img id="ceciliaPaynePoster" src="img/marvin/posters/ceciliaPaynePoster.JPG">
+      <img id="ceciliaPayneObt" src="img/marvin/posters/ceciliaPayneObit.JPG">
+
+    </a-assets>
+
         <a-entity camera look-controls postition="0 0 0">
             <a-entity id="smartText" text="color: red" geometry="primitive: plane; width: .4; height:.04" material="color: #fff" position="0 -0.1 -1" scale="0 0 0" rotation="0 0 0">
                 <a-entity id="textHolder"></a-entity>
@@ -28,6 +35,9 @@
                 <a-animation begin="click" easing="ease-in" attribute="scale" to="1 1 1"></a-animation>
 
             </a-entity>
+            <a-image visible="false" transparent="true" id="posterHud" position="0 0 -0.686">
+              <a-animation begin="click" easing="ease-in" attribute="scale" from="0 0 0" to="1 1 1"></a-animation>
+            </a-image>
 
         </a-entity>
         <a-entity id="markers"></a-entity>
