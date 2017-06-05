@@ -2,7 +2,7 @@ var startingRoom = "4marvin"
 var sceneEl;
 var currentFuse;
 $(function () {
-    loadSphere(startingRoom, 0);
+    loadSphere(startingRoom, 6);
     var markers = document.getElementById('markers')
     markers.setAttribute('rotation', {
         x: 90,
@@ -65,6 +65,7 @@ function loadSphere(room, num) {
         $(".marker").on("fusing", function (evt) {
             $("#textHolder").attr("text", "value:" + $(evt.target).data("text") + "; align: center; color: red");
             currentFuse=evt.target;
+            console.log(currentFuse);
             var hudA = sceneEl.querySelector('#posterHud');
             if ($(evt.target).data("triggertype") == "image") {
                 hudA.emit('hudShow');
@@ -100,10 +101,24 @@ function loadSphere(room, num) {
         }
 
         function makeMarker(mkr, id) {
-            console.log(mkr.type)
 
-            var spin = Math.atan2(mkr.x, mkr.y) * (180 / Math.PI) + 180;
-            var marker = document.createElement('a-sphere');
+            if (mkr.triggertype == "scene"){
+              var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
+              var marker= document.createElement('a-image');
+              marker.setAttribute('src',  "img/nextMarker.png")
+              marker.setAttribute('scale',  "2 2 2")
+              marker.setAttribute('opacity', ".8")
+              marker.setAttribute('rotation', {
+                z: spin
+              });
+            }
+            else {
+                var marker = document.createElement('a-sphere');
+                marker.setAttribute('radius', "0.2")
+                marker.setAttribute('color', "#f10e0e")
+                marker.setAttribute('opacity', ".7")
+            }
+
             marker.setAttribute('position', {
                 x: mkr.x,
                 y: mkr.y,
@@ -119,9 +134,7 @@ function loadSphere(room, num) {
                 marker.setAttribute('data-' + key, mkr[key])
             }
             //marker.setAttribute('src',  "nextMarker.png")
-            marker.setAttribute('radius', "0.2")
-            marker.setAttribute('color', "#f10e0e")
-            marker.setAttribute('opacity', ".7")
+
             marker.setAttribute("cursor-listener")
             marker.setAttribute("id", "marker" + id)
             marker.setAttribute('data-num', mkr.number);

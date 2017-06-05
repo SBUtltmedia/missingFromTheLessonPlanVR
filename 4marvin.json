@@ -59,11 +59,18 @@
             "leftImg": "marvin/R0010909.JPG",
             "markers": [
                 {
-                    "text": "You Found Wolfie!",
-                    "triggertype": "info",
+                    "triggertype": "image",
+                    "src" : "#danielhaleObit",
                     "x": -9.508,
                     "y": -6.518,
-                    "z": 4.047
+                    "z": 3.435
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#danielhalePoster",
+                    "x": -9.508,
+                    "y": 0.547,
+                    "z": 0.083
                 },
                 {
                     "number": 0,
@@ -95,11 +102,60 @@
             "leftImg": "marvin/R0010918.JPG",
             "markers": [
                 {
-                    "text": "You Found Wolfie!",
-                    "triggertype": "info",
+                    "triggertype": "image",
+                    "src" : "#maryMahoneyObit",
                     "x": -1.601,
                     "y": 8.160,
-                    "z": 4.372
+                    "z": 3.937
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#maryMahoneyPoster",
+                    "x": -0.758,
+                    "y": 8.160,
+                    "z": 2.901
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#lynnConwayObit",
+                    "x": -11.449,
+                    "y": 3.115,
+                    "z": 4.520
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#lynnConwayPoster",
+                    "x": -11.506,
+                    "y": 4.148,
+                    "z": 1.351
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#maeJemisonObit",
+                    "x": -9.979,
+                    "y": -4.204,
+                    "z": 4.016
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#maeJemisonPoster",
+                    "x": -9.979,
+                    "y": -6.991,
+                    "z": 5.169
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#maeJemisonPoem",
+                    "x": -9.979,
+                    "y": -8.952,
+                    "z": 5.169
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#DouglisMarrPoem",
+                    "x": 1.525,
+                    "y": -8.952,
+                    "z": 5.169
                 },
                 {
                     "number": 1,
@@ -131,11 +187,18 @@
             "leftImg": "marvin/R0010910.JPG",
             "markers": [
                 {
-                    "text": "You Found Wolfie!",
-                    "triggertype": "info",
+                  "triggertype": "image",
+                  "src" : "#margretHamiltonObit",
                     "x": -9.151,
                     "y": -1.579,
-                    "z": 7.302
+                    "z": 6.595
+                },
+                {
+                  "triggertype": "image",
+                  "src" : "#margretHamiltonPoster",
+                    "x": -9.151,
+                    "y": 0.126,
+                    "z": 2.435
                 },
                 {
                     "number": 2,
@@ -167,11 +230,18 @@
             "leftImg": "marvin/R0010911.JPG",
             "markers": [
                 {
-                    "text": "You Found Wolfie!",
-                    "triggertype": "info",
+                    "triggertype": "image",
+                    "src" : "#TawakkolKarmanObit",
                     "x": -9.151,
                     "y": -0.933,
                     "z": 6.172
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster",
+                    "x": -9.151,
+                    "y": 0.081,
+                    "z": 2.188
                 },
                 {
                     "number": 3,
@@ -203,11 +273,32 @@
             "leftImg": "marvin/R0010912.JPG",
             "markers": [
                 {
-                    "text": "You Found Wolfie!",
-                    "triggertype": "info",
+                    "triggertype": "image",
+                    "src" : "#veraRubinObit",
                     "x": -9.141,
                     "y": -0.227,
-                    "z": 5.875
+                    "z": 5.252
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#veraRubinPoster",
+                    "x": -9.141,
+                    "y": 1.084,
+                    "z": 1.726
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungObit",
+                    "x": -5.415,
+                    "y": 14.813,
+                    "z": 5.605
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungPoster",
+                    "x": -5.415,
+                    "y": 19.063,
+                    "z": 1.716
                 },
                 {
                     "number": 4,
@@ -239,11 +330,39 @@
             "leftImg": "marvin/R0010919.JPG",
             "markers": [
                 {
-                    "text": "You Found Wolfie!",
-                    "triggertype": "info",
+                    "triggertype": "image",
+                    "src" : "#alanTuringObit",
                     "x": 4.366,
                     "y": 11.166,
-                    "z": 5.987
+                    "z": 5.501
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#AlanTuringPoster",
+                    "x": 5.966,
+                    "y": 9.778,
+                    "z": 4.769
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#hedyLamarrObit",
+                    "x": -19.568,
+                    "y": 3.625,
+                    "z": 2.845
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#HedyLamarrPoster",
+                    "x": -11.023,
+                    "y": 6.466,
+                    "z": -0.022
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#missingPoster",
+                    "x": -4.125,
+                    "y": 11.159,
+                    "z": 3.257
                 },
                 {
                     "number": 5,
@@ -259,6 +378,14 @@
                     "triggertype": "scene",
                     "x": 19.462,
                     "y": 15.314,
+                    "z": 10.246
+                },
+                {
+                    "number": 4,
+                    "text": "Step back",
+                    "triggertype": "scene",
+                    "x": 5.052,
+                    "y": -9.963,
                     "z": 10.246
                 }
             ]
