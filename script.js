@@ -1,5 +1,6 @@
 var startingRoom = "4marvin"
 var sceneEl;
+var currentFuse;
 $(function () {
     loadSphere(startingRoom, 0);
     var markers = document.getElementById('markers')
@@ -50,25 +51,27 @@ function loadSphere(room, num) {
         });
 
         $(".marker").on("click", function (evt) {
-            if ($(evt.target).data("type") == "scene") {
+            if ($(evt.target).data("triggertype") == "scene") {
                 if ($(evt.target).data("room") == "") {
                     loadSphere(room, $(evt.target).data("number"));
                 } else {
                     loadSphere($(evt.target).data("room"), $(evt.target).data("number"));
                 }
             }
-            if ($(evt.target).data("type") == "image") {
-                zoomIn(evt.target);
-            }
+
         });
 
 
         $(".marker").on("fusing", function (evt) {
             $("#textHolder").attr("text", "value:" + $(evt.target).data("text") + "; align: center; color: red");
-            var smartText = sceneEl.querySelector('#smartText');
-            smartText.emit('textShow')
-
-            // $("#smartText").animate({"scale","1 1 1")
+            currentFuse=evt.target;
+            var hudA = sceneEl.querySelector('#posterHud');
+            if ($(evt.target).data("triggertype") == "image") {
+                hudA.emit('hudShow');
+                zoom(evt.target);
+                evt.target.setAttribute("scale","18 18 18");
+                evt.target.setAttribute("opacity",0);
+            }
         });
 
         //$('#cursor').on('mouseleave', mouseleave);
@@ -78,19 +81,22 @@ function loadSphere(room, num) {
         cursor.addEventListener('mouseleave', mouseleave);
 
         function mouseleave(event) {
-            //$("#smartText").attr("text", "");
-            // $("#smartText").attr("scale","0 0 0")
-            var smartText = sceneEl.querySelector('#smartText');
-            smartText.emit('textHide')
+          console.log($(currentFuse).data("triggertype"))
+            if ($(currentFuse).data("triggertype") == "image") {
+              currentFuse.setAttribute("scale","1 1 1");
+              currentFuse.setAttribute("opacity",1);
+              var hudA = sceneEl.querySelector('#posterHud');
+              hudA.emit('hudHide');
+              zoom(currentFuse);
+
+
+            }
+
 
         }
 
-        function zoomIn(mkr) {
+        function zoom(mkr) {
           $("#posterHud").attr('src', $(mkr).data("src"));
-          $("#posterHud").attr('visible', "true");
-
-
-
         }
 
         function makeMarker(mkr, id) {
