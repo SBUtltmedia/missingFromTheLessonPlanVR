@@ -15,12 +15,11 @@
 <body>
     <a-scene antialias="true">
 
-    <a-assets>
+      <a-assets>
       <img id="MaryPenningtonPoster" src="img/marvin/posters/MaryPenningtonPoster.JPG">
       <img id="ceciliaPaynePoster" src="img/marvin/posters/ceciliaPaynePoster.JPG">
       <img id="ceciliaPayneObt" src="img/marvin/posters/ceciliaPayneObit.JPG">
-
-    </a-assets>
+     </a-assets>
 
         <a-entity camera look-controls postition="0 0 0">
             <a-entity id="smartText" text="color: red" geometry="primitive: plane; width: .4; height:.04" material="color: #fff" position="0 -0.1 -1" scale="0 0 0" rotation="0 0 0">
@@ -35,13 +34,14 @@
                 <a-animation begin="click" easing="ease-in" attribute="scale" to="1 1 1"></a-animation>
 
             </a-entity>
-            <a-image visible="false" transparent="true" id="posterHud" position="0 0 -0.686">
+
+            <a-image visible="false" transparent="true" id="posterHud" position="0 0 -0.686" rotation="0 0 270">
               <a-animation begin="click" easing="ease-in" attribute="scale" from="0 0 0" to="1 1 1"></a-animation>
             </a-image>
 
         </a-entity>
         <a-entity id="markers"></a-entity>
-          <a-entity id="images" look-at="[camera]" rotation="0 170 99"></a-entity>
+          <a-entity id="images" look-at="[camera]"></a-entity>
         <!-- add src="img/00.JPG" while positioning markers! Inspector background cannot be displayed without static injection -->
         <a-sky id="sky1"></a-sky>
         <!--        <a-sky id="sky2" stereo="eye:right"></a-sky>-->
