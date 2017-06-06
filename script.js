@@ -2,15 +2,9 @@ var startingRoom = "4marvin"
 var sceneEl;
 var currentFuse;
 $(function () {
-    loadSphere(startingRoom, 6);
-    var markers = document.getElementById('markers')
-    markers.setAttribute('rotation', {
-        x: 90,
-        y: 0,
-        z: 180
-    });
+    document.querySelector( 'a-assets' ).addEventListener( 'loaded', assetsLoaded )
+    $('#loader').spin('large', '#FF0000')
 
-    sceneEl = document.querySelector('a-scene');
 });
 
 
@@ -27,6 +21,20 @@ AFRAME.registerComponent('cursor-listener', {
 
 function leftPad(num) {
     return ("0" + num).slice(-2)
+}
+
+function assetsLoaded () {
+  loadSphere(startingRoom, 6);
+  var markers = document.getElementById('markers')
+  markers.setAttribute('rotation', {
+      x: 90,
+      y: 0,
+      z: 180
+  });
+
+  sceneEl = document.querySelector('a-scene');
+  $('#loader').spin(false)
+  $("#loader").remove();
 }
 
 function loadSphere(room, num) {

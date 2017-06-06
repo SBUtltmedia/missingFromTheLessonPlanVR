@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>A-Frame Tour</title>
+    <title>Missing From The Lesson Plan Virtual Reality</title>
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://rawgit.com/ngokevin/aframe-look-at-component/master/dist/aframe-look-at-component.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="http://spin.js.org/spin.min.js"></script>
+    <script src="spinnerq.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
+    <div id="loader" style="color:white;width:100%;height:100%;" > </div>
     <a-scene antialias="true">
 
       <a-assets>
@@ -25,19 +28,26 @@
       <img id="maryMahoneyPoster" src="img/marvin/posters/MaryMahoneyPoster.png">
       <img id="maryMahoneyObit" src="img/marvin/posters/maryElizaMahoneyObit.png">
       <img id="lynnConwayObit" src="img/marvin/posters/lynnConwayObit.png">
-      <img id="lynnConwayPoster" src="img/marvin/posters/lynnConwayPoster.png">
+      <img id="lynnConwayPoster1" src="img/marvin/posters/lynnConway1.png">
+      <img id="lynnConwayPoster2" src="img/marvin/posters/lynnConway2.png">
       <img id="maeJemisonObit" src="img/marvin/posters/maeJemisonObit.png">
       <img id="maeJemisonPoster" src="img/marvin/posters/maeJemisonPoster.png">
       <img id="maeJemisonPoem" src="img/marvin/posters/MaeJemisonPoem.png">
       <img id="DouglisMarrPoem" src="img/marvin/posters/DouglisMarrPoem.png">
       <img id="margretHamiltonObit" src="img/marvin/posters/margretHamiltonObit.png">
-      <img id="margretHamiltonPoster" src="img/marvin/posters/margretHamiltonPoster.png">
+      <img id="margretHamiltonPoster1" src="img/marvin/posters/margretHamilton1.png">
+      <img id="margretHamiltonPoster2" src="img/marvin/posters/margretHamilton2.png">
       <img id="TawakkolKarmanObit" src="img/marvin/posters/TawakkolKarmanObit.png">
-      <img id="tawakkakolKarmenPoster" src="img/marvin/posters/tawakkakolKarmenPoster.png">
+      <img id="tawakkakolKarmenPoster1" src="img/marvin/posters/TawakkolKarman1.png">
+      <img id="tawakkakolKarmenPoster2" src="img/marvin/posters/TawakkolKarman2.png">
+      <img id="tawakkakolKarmenPoster3" src="img/marvin/posters/TawakkolKarman3.png">
+      <img id="tawakkakolKarmenPoster4" src="img/marvin/posters/TawakkolKarman4.png">
       <img id="veraRubinObit" src="img/marvin/posters/veraRubinObit.png">
       <img id="veraRubinPoster" src="img/marvin/posters/veraRubinPoster.png">
       <img id="stellaYoungObit" src="img/marvin/posters/stellaYoungObit.png">
-      <img id="stellaYoungPoster" src="img/marvin/posters/stellaYoungPoster.png">
+      <img id="stellaYoungPoster1" src="img/marvin/posters/StellaYoung1.png">
+      <img id="stellaYoungPoster2" src="img/marvin/posters/StellaYoung2.png">
+      <img id="stellaYoungPoster3" src="img/marvin/posters/StellaYoung3.png">
       <img id="alanTuringObit" src="img/marvin/posters/alanTuringObit.png">
       <img id="AlanTuringPoster" src="img/marvin/posters/AlanTuringPoster.png">
       <img id="hedyLamarrObit" src="img/marvin/posters/hedyLamarrObit.png">
@@ -55,7 +65,7 @@
 
             </a-entity>
 
-            <a-image visible="true" transparent="true" id="posterHud" scale="0 0 0" position="0 0 -0.499" rotation="0 0 0">
+            <a-image visible="true" transparent="true" id="posterHud" scale="0 0 0" position="0 0 -0.589" rotation="0 0 0">
               <a-animation begin="hudShow"  attribute="scale" from="0 0 0" to="1 1 1" dur="900"></a-animation>
               <a-animation begin="hudHide"  attribute="scale" from="1 1 1" to="0 0 0"></a-animation>
             </a-image>

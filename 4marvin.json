@@ -95,6 +95,14 @@
                     "x": 8.156,
                     "y": 30.768,
                     "z": 7.258
+                },
+                {
+                    "number": 3,
+                    "text": "Stand here",
+                    "triggertype": "scene",
+                    "x": 0.322,
+                    "y": 10.413,
+                    "z": 7.258
                 }
             ]
         },
@@ -124,10 +132,17 @@
                 },
                 {
                     "triggertype": "image",
-                    "src" : "#lynnConwayPoster",
+                    "src" : "#lynnConwayPoster1",
                     "x": -11.506,
-                    "y": 4.148,
-                    "z": 1.351
+                    "y": 5.481,
+                    "z": 1.113
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#lynnConwayPoster2",
+                    "x": -11.506,
+                    "y": 2.736,
+                    "z": 1.113
                 },
                 {
                     "triggertype": "image",
@@ -195,10 +210,17 @@
                 },
                 {
                   "triggertype": "image",
-                  "src" : "#margretHamiltonPoster",
+                  "src" : "#margretHamiltonPoster2",
                     "x": -9.151,
-                    "y": 0.126,
-                    "z": 2.435
+                    "y": 2.591,
+                    "z": 2.391
+                },
+                {
+                  "triggertype": "image",
+                  "src" : "#margretHamiltonPoster1",
+                    "x": -9.151,
+                    "y": -2.027,
+                    "z": 2.391
                 },
                 {
                     "number": 2,
@@ -238,10 +260,31 @@
                 },
                 {
                     "triggertype": "image",
-                    "src" : "#tawakkakolKarmenPoster",
+                    "src" : "#tawakkakolKarmenPoster1",
                     "x": -9.151,
-                    "y": 0.081,
-                    "z": 2.188
+                    "y": 2.813,
+                    "z": 0.190
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster2",
+                    "x": -9.151,
+                    "y": 0.061,
+                    "z": 0.190
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster3",
+                    "x": -8.621,
+                    "y": -2.273,
+                    "z": 2.103
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster4",
+                    "x": -8.621,
+                    "y": 0.402,
+                    "z": 3.174
                 },
                 {
                     "number": 3,
@@ -295,10 +338,24 @@
                 },
                 {
                     "triggertype": "image",
-                    "src" : "#stellaYoungPoster",
-                    "x": -5.415,
-                    "y": 19.063,
-                    "z": 1.716
+                    "src" : "#stellaYoungPoster1",
+                    "x": -8.513,
+                    "y": 24.935,
+                    "z": 1.642
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungPoster2",
+                    "x": -5.867,
+                    "y": 30.135,
+                    "z": 0.329
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungPoster3",
+                    "x": -11.305,
+                    "y": 26.665,
+                    "z": 7.183
                 },
                 {
                     "number": 4,
