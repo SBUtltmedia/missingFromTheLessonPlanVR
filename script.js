@@ -46,14 +46,22 @@ function loadSphere(room, num) {
         // $("#sky2").attr("src", "img/" + data.spheres[num].rightImg);
 
         data.spheres.forEach(function (val, index, array) {
-            (new Image()).src = "img/" + val.leftImg;
-            (new Image()).src = "img/" + val.rightImg
+           (new Image()).src = "img/" + val.leftImg;
+          //  (new Image()).src = "img/" + val.rightImg
         });
+
+        var pictures=6;
+
+        while(pictures--){
+        //  console.log(pictures)
+            (new Image()).src ="img/marvin/"+(pictures+1)+".jpg";
+        }
+
 
         data.spheres[num].markers.forEach(function (val, index, array) {
             if (val.room) {
                 (new Image()).src = "img/" + val.room + "_" + leftPad(val.number + 1) + "_Left.JPG";
-                (new Image()).src = "img/" + val.room + "_" + leftPad(val.number + 1) + "_Right.JPG"
+
             }
             makeMarker(val, index);
         });
