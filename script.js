@@ -64,6 +64,18 @@ function loadSphere(room, num) {
         });
 
 
+
+        $("#hudShow").on("animationend", function (evt) {
+            var hudA = sceneEl.querySelector('#posterHud');
+            hudA.setAttribute('look-controls', "reverseMouseDrag=true;");
+        });
+
+        $("#hudHide").on("animationend", function (evt) {
+            var hudA = sceneEl.querySelector('#posterHud');
+            hudA.removeAttribute('look-controls');
+        });
+
+
         $(".marker").on("fusing", function (evt) {
             $("#textHolder").attr("text", "value:" + $(evt.target).data("text") + "; align: center; color: red");
             currentFuse=evt.target;
@@ -71,7 +83,7 @@ function loadSphere(room, num) {
             var hudA = sceneEl.querySelector('#posterHud');
             if ($(evt.target).data("triggertype") == "image") {
                 hudA.emit('hudShow');
-                hudA.setAttribute('look-controls', "reverseMouseDrag=true;");
+
                 zoom(evt.target);
                 evt.target.setAttribute("scale","18 18 18");
                 evt.target.setAttribute("opacity",0);
@@ -92,7 +104,6 @@ function loadSphere(room, num) {
               currentFuse.setAttribute("opacity",1);
               var hudA = sceneEl.querySelector('#posterHud');
               hudA.emit('hudHide');
-              hudA.removeAttribute('look-controls');
               zoom(currentFuse);
 
 
