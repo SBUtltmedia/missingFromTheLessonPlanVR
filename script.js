@@ -24,6 +24,7 @@ function leftPad(num) {
 }
 
 function assetsLoaded () {
+
   loadSphere(startingRoom, 6);
   var markers = document.getElementById('markers')
   markers.setAttribute('rotation', {
@@ -39,34 +40,18 @@ function assetsLoaded () {
 
 function loadSphere(room, num) {
     $.getJSON(room + ".json", function (data) {
-
+        //Clean up previous scene
         $('.marker').remove();
         $('.preview').remove();
-        $("#sky1").attr("src", "img/" + data.spheres[num].leftImg);
-        // $("#sky2").attr("src", "img/" + data.spheres[num].rightImg);
-
-        data.spheres.forEach(function (val, index, array) {
-           (new Image()).src = "img/" + val.leftImg;
-          //  (new Image()).src = "img/" + val.rightImg
-        });
-
-        var pictures=6;
-
-        while(pictures--){
-        //  console.log(pictures)
-            (new Image()).src ="img/marvin/"+(pictures+1)+".jpg";
-        }
-
-
+        //Update the background
+        $("#sky1").attr("src", data.spheres[num].leftImg);
         data.spheres[num].markers.forEach(function (val, index, array) {
-            if (val.room) {
-                (new Image()).src = "img/" + val.room + "_" + leftPad(val.number + 1) + "_Left.JPG";
-
-            }
+            //Marker generation for current scene
             makeMarker(val, index);
         });
 
         $(".marker").on("click", function (evt) {
+            
             if ($(evt.target).data("triggertype") == "scene") {
                 if ($(evt.target).data("room") == "") {
                     loadSphere(room, $(evt.target).data("number"));

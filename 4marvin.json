@@ -1,7 +1,7 @@
 {
     "spheres": [
         {
-            "leftImg": "marvin/7.jpg",
+            "leftImg": "#sphere7",
             "markers": [
                 {
                     "triggertype": "image",
@@ -56,7 +56,7 @@
             ]
         },
         {
-            "leftImg": "marvin/1.jpg",
+            "leftImg": "#sphere1",
             "markers": [
                 {
                     "triggertype": "image",
@@ -107,7 +107,7 @@
             ]
         },
         {
-            "leftImg": "marvin/5.jpg",
+            "leftImg": "#sphere5",
             "markers": [
                 {
                     "triggertype": "image",
@@ -199,7 +199,7 @@
             ]
         },
         {
-            "leftImg": "marvin/2.jpg",
+            "leftImg": "#sphere2",
             "markers": [
                 {
                   "triggertype": "image",
@@ -249,7 +249,7 @@
             ]
         },
         {
-            "leftImg": "marvin/3.jpg",
+            "leftImg": "#sphere3",
             "markers": [
                 {
                     "triggertype": "image",
@@ -313,7 +313,7 @@
             ]
         },
         {
-            "leftImg": "marvin/4.jpg",
+            "leftImg": "#sphere4",
             "markers": [
                 {
                     "triggertype": "image",
@@ -384,7 +384,7 @@
             ]
         },
         {
-            "leftImg": "marvin/6.jpg",
+            "leftImg": "#sphere6",
             "markers": [
                 {
                     "triggertype": "image",
