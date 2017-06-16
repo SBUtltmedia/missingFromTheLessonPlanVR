@@ -63,19 +63,6 @@ function loadSphere(room, num) {
 
         });
 
-
-
-        $("#hudShow").on("animationend", function (evt) {
-            var hudA = sceneEl.querySelector('#posterHud');
-            hudA.setAttribute('look-controls', "reverseMouseDrag=true;");
-        });
-
-        $("#hudHide").on("animationend", function (evt) {
-            var hudA = sceneEl.querySelector('#posterHud');
-            hudA.removeAttribute('look-controls');
-        });
-
-
         $(".marker").on("fusing", function (evt) {
             $("#textHolder").attr("text", "value:" + $(evt.target).data("text") + "; align: center; color: red");
             currentFuse=evt.target;
