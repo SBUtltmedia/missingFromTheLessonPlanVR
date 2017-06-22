@@ -26,18 +26,13 @@ function assetsLoaded () {
 
   loadSphere(startingRoom, 6);
   var markers = document.getElementById('markers')
-  markers.setAttribute('rotation', {
-      x: 90,
-      y: 0,
-      z: 180
-  });
+
+
 
   sceneEl = document.querySelector('a-scene');
   $('#loader').spin(false)
   $("#loader").remove();
 }
-
-
 
 function loadSphere(room, num) {
     $.getJSON(room + ".json", function (data) {
@@ -69,9 +64,9 @@ function loadSphere(room, num) {
             console.log(currentFuse);
             var hudA = sceneEl.querySelector('#posterHud');
             if ($(evt.target).data("triggertype") == "image") {
-                hudA.emit('hudShow');
+             hudA.emit('hudShow');
 
-                zoom(evt.target);
+             zoomIn(evt.target);
                 evt.target.setAttribute("scale","18 18 18");
                 evt.target.setAttribute("opacity",0);
 
@@ -85,23 +80,51 @@ function loadSphere(room, num) {
         cursor.addEventListener('mouseleave', mouseleave);
 
         function mouseleave(event) {
-          console.log($(currentFuse).data("triggertype"))
-            if ($(currentFuse).data("triggertype") == "image") {
-              currentFuse.setAttribute("scale","1 1 1");
-              currentFuse.setAttribute("opacity",1);
-              var hudA = sceneEl.querySelector('#posterHud');
-              hudA.emit('hudHide');
-              zoom(currentFuse);
+          // console.log($(currentFuse).data("triggertype"))
+          //   if ($(currentFuse).data("triggertype") == "image") {
+          //     currentFuse.setAttribute("scale","1 1 1");
+          //     currentFuse.setAttribute("opacity",1);
+          //     var hudA = sceneEl.querySelector('#posterHud');
+          //     hudA.emit('hudHide');
+          // //    zoom(currentFuse);
 
 
-            }
+          //  }
 
 
         }
 
-        function zoom(mkr) {
-          $("#posterHud").attr('src', $(mkr).data("src"));
-        }
+
+        function zoomIn(mkr) {
+        var poster=  document.getElementById('posterHud')
+            console.log($(mkr).data("z"))
+            eX = $(mkr).data("x");
+            eY = $(mkr).data("y");
+            eZ = $(mkr).data("z");
+
+            var spinLeftRight=Math.atan2(eX,eZ) * (180 / Math.PI)+180;
+          var mag= Math.sqrt(eX*eX+eZ*eZ)
+            var spinUpDown=Math.atan2(mag,eY) * (180 / Math.PI)+180;
+          // var spinUpDown=0;
+              console.log(spinLeftRight, spinUpDown);
+              //var testObject = document.createElement('a-image');
+              poster.setAttribute('src', $(mkr).data("src"));
+              poster.setAttribute('rotation', {
+            x: spinUpDown+270,
+            y: spinLeftRight+180,
+            z: 180,
+            });
+            //poster.setAttribute('height', 50);
+            //poster.setAttribute('width', 50);
+            poster.setAttribute('position', {
+              x: eX + 1000,
+              y: 0,
+              z: 0
+            });
+
+            //
+            //$("#markers").prepend(testObject)
+          }
 
         function makeMarker(mkr, id) {
 
@@ -136,6 +159,11 @@ function loadSphere(room, num) {
                 console.log(key)
                 marker.setAttribute('data-' + key, mkr[key])
             }
+
+
+
+
+
             //marker.setAttribute('src',  "nextMarker.png")
 
             marker.setAttribute("cursor-listener")
