@@ -65,10 +65,10 @@
 
         <a-entity camera look-controls postition="0 0 0">
             <a-entity daydream-controller></a-entity>
-            <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat">
+            <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 1000" scale="0.3 0.3 0.3" position="0 0 -0.3" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat">
 
                 <a-animation begin="fusing" easing="ease-in" dur="1000" attribute="scale" fill="none" to="0.1 0.1 0.1"></a-animation>
-                <a-animation begin="click" easing="ease-in" attribute="scale" to="1 1 1"></a-animation>
+                <a-animation begin="click" easing="ease-in" attribute="scale" to="0.3 0.3 0.3"></a-animation>
 
             </a-entity>
 
@@ -76,9 +76,9 @@
         </a-entity>
         <a-entity id="markers">
 
-                 <a-curvedimage visible="true" transparent="true" id="posterHud" scale="0 0 0" position="-50 0 0" rotation="0 0 0" height="500" radius="1280" theta-start="-200" theta-length="30">
-                   <a-animation id="hudShow" begin="hudShow"  attribute="scale" from="0 0 0" to="1 1 1" dur="900"></a-animation>
-                   <a-animation id="hudHide" begin="hudHide"  attribute="scale" from="1 1 1" to="0 0 0"></a-animation>
+                 <a-curvedimage visible="true" transparent="true" id="posterHud" scale="0 0 0" position="0 0 0" rotation="0 0 0" height="0.8" radius="0.4" theta-start="-230" theta-length="100">
+                   <a-animation id="hudShow" begin="hudShow"  attribute="scale" from="0 0 0" to="2.1 2.1 2.1" dur="900"></a-animation>
+                   <a-animation id="hudHide" begin="hudHide"  attribute="scale" from="2.1 2.1 2.1" to="0 0 0"></a-animation>
 
       </a-curvedimage>
     </a-entity>
