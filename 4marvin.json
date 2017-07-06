@@ -6,52 +6,52 @@
                 {
                     "triggertype": "image",
                     "src" : "#MaryPenningtonPoster",
-                    "x": -7.442,
-                    "y": -5.048,
-                    "z": 5.143
+                    "x": 8.901,
+                    "y": -6.458,
+                    "z": 5.959
                 },
                 {
                     "triggertype": "image",
                     "src" : "#MaryPenningtonPoster1",
-                    "x": -6.992,
-                    "y": -7.179,
-                    "z": 6.010
+                    "x": 7.190,
+                    "y": -6.667,
+                    "z": 7.339
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ceciliaPayneObt",
-                    "x": -5.700,
-                    "y": 12.744,
-                    "z": 0.888
+                    "x": 6.817,
+                    "y": -2.213,
+                    "z": -15.396
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ceciliaPaynePoster",
-                    "x": -7.957,
-                    "y": 9.062,
-                    "z": 0.017
+                    "x": 10.547,
+                    "y": -0.014,
+                    "z": -11.924
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ShigeryMiyaObt",
-                    "x": -14.060,
-                    "y": -0.345,
-                    "z": 1.318
+                    "x": 13.900,
+                    "y": -1.351,
+                    "z": 0.365
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ShigeruMiyaPoster",
-                    "x": -14.387,
-                    "y": 2.609,
-                    "z": 0.486
+                    "x": 16.241,
+                    "y": -0.600,
+                    "z": -2.899
                 },
                 {
                     "number": 1,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": -2.368,
+                    "x": 0.595,
                     "y": -8.177,
-                    "z": 6.922
+                    "z": 8.877
                 }
             ]
         },
@@ -92,17 +92,17 @@
                     "number": 5,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": 8.156,
-                    "y": 30.768,
-                    "z": 7.258
+                    "x": -2.274,
+                    "y": -6.994,
+                    "z": -22.805
                 },
                 {
                     "number": 3,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": 0.322,
-                    "y": 10.413,
-                    "z": 7.258
+                    "x": -9.296,
+                    "y": -7.960,
+                    "z": -7.880
                 }
             ]
         },

@@ -24,7 +24,7 @@ function leftPad(num) {
 
 function assetsLoaded () {
 
-  loadSphere(startingRoom, 6);
+  loadSphere(startingRoom, 0);
   var markers = document.getElementById('markers')
 
 
@@ -131,13 +131,14 @@ function loadSphere(room, num) {
         function makeMarker(mkr, id) {
 
             if (mkr.triggertype == "scene"){
-              var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
+              var spin=Math.atan2(mkr.x,mkr.z) * (180 / Math.PI)+180;
               var marker= document.createElement('a-image');
               marker.setAttribute('src',  "img/nextMarker.png")
               marker.setAttribute('scale',  "2 2 2")
               marker.setAttribute('opacity', ".8")
               marker.setAttribute('rotation', {
-                z: spin
+                x: -90,
+                y:spin
               });
             }
             else {
