@@ -56,10 +56,6 @@ function loadSphere(room, num) {
                 }
             }
 
-        });
-
-        $(".marker").on("fusing", function (evt) {
-            $("#textHolder").attr("text", "value:" + $(evt.target).data("text") + "; align: center; color: red");
             currentFuse=evt.target;
             console.log(currentFuse);
             var hudA = sceneEl.querySelector('#posterHud');
@@ -69,8 +65,14 @@ function loadSphere(room, num) {
              zoomIn(evt.target);
                 evt.target.setAttribute("scale","18 18 18");
                 evt.target.setAttribute("opacity",0);
-
             }
+
+
+
+        });
+
+        $(".marker").on("fusing", function (evt) {
+
         });
 
         //$('#cursor').on('mouseleave', mouseleave);
@@ -117,7 +119,7 @@ function loadSphere(room, num) {
             //poster.setAttribute('height', 50);
             //poster.setAttribute('width', 50);
             poster.setAttribute('position', {
-              x: eX + 1000,
+              x: 0,
               y: 0,
               z: 0
             });
