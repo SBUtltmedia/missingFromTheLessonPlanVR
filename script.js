@@ -24,7 +24,7 @@ function leftPad(num) {
 
 function assetsLoaded () {
 
-  loadSphere(startingRoom, 0);
+  loadSphere(startingRoom, 5);
   var markers = document.getElementById('markers')
 
 
