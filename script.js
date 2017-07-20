@@ -123,6 +123,13 @@ function loadSphere(room, num) {
               y: 0,
               z: 0
             });
+            /*
+            $("#closeBtn").setAttribute('position', {
+              x: 1,
+              y: 0,
+              z: 1
+            });
+            */
 
             //
             //$("#markers").prepend(testObject)
