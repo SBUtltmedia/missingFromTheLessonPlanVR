@@ -2,6 +2,7 @@
     "spheres": [
         {
             "leftImg": "#sphere7",
+            "startingAngle":30,
             "markers": [
                 {
                     "triggertype": "image",
@@ -287,6 +288,48 @@
                     "z": -0.468
                 },
                 {
+                    "triggertype": "image",
+                    "src" : "#veraRubinObit",
+                    "x": 10.431,
+                    "y": -6.131,
+                    "z": 0.269
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#veraRubinPoster",
+                    "x": 10.937,
+                    "y": -2.051,
+                    "z": -1.336
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungObit",
+                    "x": 3.775,
+                    "y": -3.764,
+                    "z": -10.327
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungPoster2",
+                    "x": 2.213,
+                    "y": 0.012,
+                    "z": -11.489
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungPoster1",
+                    "x": 3.667,
+                    "y": -0.734,
+                    "z": -10.608
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#stellaYoungPoster3",
+                    "x": 4.625,
+                    "y": -2.785,
+                    "z": -10.858
+                },
+                {
                     "number": 3,
                     "text": "Step back",
                     "triggertype": "scene",
@@ -315,6 +358,60 @@
         {
             "leftImg": "#sphere4",
             "markers": [
+              {
+                 "number": 6,
+                 "text": "Move here",
+                  "triggertype": "walkToImage",
+                      "startingAngle":30,
+                  "src" : "#alanTuringObit",
+                  "x": -10,
+                  "y": -4.4,
+                  "z": -1.2
+              },
+              {
+                "number": 6,
+                "text": "Move here",
+                  "triggertype": "walkToImage",
+                  "src" : "#AlanTuringPoster",
+                  "x": -10,
+                  "y": -3.5,
+                  "z": -0.35
+              },
+              {
+                  "triggertype": "image",
+                  "src" : "#TawakkolKarmanObit",
+                  "x": 5,
+                  "y": -4.8,
+                  "z": 10
+              },
+              {
+                  "triggertype": "image",
+                  "src" : "#tawakkakolKarmenPoster1",
+                  "x": 9.2,
+                  "y": -3,
+                  "z": 10
+              },
+              {
+                  "triggertype": "image",
+                  "src" : "#tawakkakolKarmenPoster2",
+                  "x": 6,
+                  "y": -1.355,
+                  "z": 10
+              },
+              {
+                  "triggertype": "image",
+                  "src" : "#tawakkakolKarmenPoster3",
+                  "x": 4.3,
+                  "y": -2,
+                  "z": 10
+              },
+              {
+                  "triggertype": "image",
+                  "src" : "#tawakkakolKarmenPoster4",
+                  "x": 6,
+                  "y": -3.7,
+                  "z": 10
+              },
                 {
                     "triggertype": "image",
                     "src" : "#veraRubinObit",
