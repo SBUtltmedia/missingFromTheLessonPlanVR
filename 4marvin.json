@@ -2,57 +2,57 @@
     "spheres": [
         {
             "leftImg": "#sphere7",
-            "startingAngle":30,
+            "startingAngle":0,
             "markers": [
                 {
                     "triggertype": "image",
                     "src" : "#MaryPenningtonPoster",
-                    "x": 8.901,
-                    "y": -6.458,
-                    "z": 5.959
+                    "yaw": 80.901,
+                    "pitch": -6.458,
+                    "radius": 5.959
                 },
                 {
                     "triggertype": "image",
                     "src" : "#MaryPenningtonPoster1",
-                    "x": 7.190,
-                    "y": -6.667,
-                    "z": 7.339
+                    "yaw": 7.190,
+                    "pitch": -6.667,
+                    "radius": 7.339
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ceciliaPayneObt",
-                    "x": 6.817,
-                    "y": -2.213,
-                    "z": -15.396
+                    "yaw": 6.817,
+                    "pitch": -2.213,
+                    "radius": -15.396
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ceciliaPaynePoster",
-                    "x": 10.547,
-                    "y": -0.014,
-                    "z": -11.924
+                    "yaw": 10.547,
+                    "pitch": -0.014,
+                    "radius": -11.924
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ShigeryMiyaObt",
-                    "x": 13.900,
-                    "y": -1.351,
-                    "z": 0.365
+                    "yaw": 13.900,
+                    "pitch": -1.351,
+                    "radius": 0.365
                 },
                 {
                     "triggertype": "image",
                     "src" : "#ShigeruMiyaPoster",
-                    "x": 16.241,
-                    "y": -0.600,
-                    "z": -2.899
+                    "yaw": 16.241,
+                    "pitch": -0.600,
+                    "radius": -2.899
                 },
                 {
                     "number": 1,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": 0.595,
-                    "y": -8.177,
-                    "z": 8.877
+                    "yaw": 0.595,
+                    "pitch": -8.177,
+                    "radius": 8.877
                 }
             ]
         },
@@ -62,48 +62,48 @@
                 {
                     "triggertype": "image",
                     "src" : "#danielhaleObit",
-                    "x": 8.548,
-                    "y": -3.077,
-                    "z": 5.899
+                    "yaw": 8.548,
+                    "pitch": -3.077,
+                    "radius": 5.899
                 },
                 {
                     "triggertype": "image",
                     "src" : "#danielhalePoster",
-                    "x": 7.703,
-                    "y": 0.095,
-                    "z": -0.447
+                    "yaw": 7.703,
+                    "pitch": 0.095,
+                    "radius": -0.447
                 },
                 {
                     "number": 0,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": 3.116,
-                    "y": -7.960,
-                    "z": 7.736
+                    "yaw": 3.116,
+                    "pitch": -7.960,
+                    "radius": 7.736
                 },
                 {
                     "number": 2,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": -10.001,
-                    "y": -7.960,
-                    "z": -9.654
+                    "yaw": -10.001,
+                    "pitch": -7.960,
+                    "radius": -9.654
                 },
                 {
                     "number": 5,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": -7.410,
-                    "y": -7.960,
-                    "z": -26.045
+                    "yaw": -7.410,
+                    "pitch": -7.960,
+                    "radius": -26.045
                 },
                 {
                     "number": 3,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": -1.251,
-                    "y": -7.960,
-                    "z": -10.901
+                    "yaw": -1.251,
+                    "pitch": -7.960,
+                    "radius": -10.901
                 }
             ]
         },
@@ -113,89 +113,89 @@
                 {
                     "triggertype": "image",
                     "src" : "#maryMahoneyObit",
-                    "x": 2.206,
-                    "y": -5.518,
-                    "z": -11.262
+                    "yaw": 2.206,
+                    "pitch": -5.518,
+                    "radius": -11.262
                 },
                 {
                     "triggertype": "image",
                     "src" : "#maryMahoneyPoster",
-                    "x": 1.259,
-                    "y": -4.918,
-                    "z": -13.081
+                    "yaw": 1.259,
+                    "pitch": -4.918,
+                    "radius": -13.081
                 },
                 {
                     "triggertype": "image",
                     "src" : "#lynnConwayObit",
-                    "x": 11.807,
-                    "y": -3.660,
-                    "z": -3.169
+                    "yaw": 11.807,
+                    "pitch": -3.660,
+                    "radius": -3.169
                 },
                 {
                     "triggertype": "image",
                     "src" : "#lynnConwayPoster1",
-                    "x": 13.116,
-                    "y": -1.439,
-                    "z": -6.210
+                    "yaw": 13.116,
+                    "pitch": -1.439,
+                    "radius": -6.210
                 },
                 {
                     "triggertype": "image",
                     "src" : "#lynnConwayPoster2",
-                    "x": 12.460,
-                    "y": -1.314,
-                    "z": -2.946
+                    "yaw": 12.460,
+                    "pitch": -1.314,
+                    "radius": -2.946
                 },
                 {
                     "triggertype": "image",
                     "src" : "#maeJemisonObit",
-                    "x": 11.311,
-                    "y": -4.562,
-                    "z": 4.776
+                    "yaw": 11.311,
+                    "pitch": -4.562,
+                    "radius": 4.776
                 },
                 {
                     "triggertype": "image",
                     "src" : "#maeJemisonPoster",
-                    "x": 12.404,
-                    "y": -6.220,
-                    "z": 8.690
+                    "yaw": 12.404,
+                    "pitch": -6.220,
+                    "radius": 8.690
                 },
                 {
                     "triggertype": "image",
                     "src" : "#maeJemisonPoem",
-                    "x": 13.640,
-                    "y": -7.221,
-                    "z": 12.197
+                    "yaw": 13.640,
+                    "pitch": -7.221,
+                    "radius": 12.197
                 },
                 {
                     "triggertype": "image",
                     "src" : "#DouglisMarrPoem",
-                    "x": -2.366,
-                    "y": -7.345,
-                    "z": 13.518
+                    "yaw": -2.366,
+                    "pitch": -7.345,
+                    "radius": 13.518
                 },
                 {
                     "number": 1,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": -5.537,
-                    "y": -7.960,
-                    "z": -13.847
+                    "yaw": -5.537,
+                    "pitch": -7.960,
+                    "radius": -13.847
                 },
                 {
                     "number": 3,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": -6.808,
-                    "y": -7.960,
-                    "z": -1.032
+                    "yaw": -6.808,
+                    "pitch": -7.960,
+                    "radius": -1.032
                 },
                 {
                     "number": 4,
                     "text": "Stand here",
                     "triggertype": "scene",
-                    "x": -7.927,
-                    "y": -7.960,
-                    "z": 16.452
+                    "yaw": -7.927,
+                    "pitch": -7.960,
+                    "radius": 16.452
                 }
             ]
         },
@@ -205,47 +205,47 @@
                 {
                   "triggertype": "image",
                   "src" : "#margretHamiltonObit",
-                    "x": 7.721,
-                    "y": -5.479,
-                    "z": 1.300
+                    "yaw": 7.721,
+                    "pitch": -5.479,
+                    "radius": 1.300
                 },
                 {
                   "triggertype": "image",
                   "src" : "#margretHamiltonPoster2",
-                    "x": 8.105,
-                    "y": -2.219,
-                    "z": -2.200
+                    "yaw": 8.105,
+                    "pitch": -2.219,
+                    "radius": -2.200
                 },
                 {
                   "triggertype": "image",
                   "src" : "#margretHamiltonPoster1",
-                  "x": 8.722,
-                  "y": -2.574,
-                  "z": 1.872
+                  "yaw": 8.722,
+                  "pitch": -2.574,
+                  "radius": 1.872
                 },
                 {
                     "number": 2,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": -4.898,
-                    "y": -7.960,
-                    "z": 4.818
+                    "yaw": -4.898,
+                    "pitch": -7.960,
+                    "radius": 4.818
                 },
                 {
                     "number": 1,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": 7.101,
-                    "y": -7.960,
-                    "z": 9.973
+                    "yaw": 7.101,
+                    "pitch": -7.960,
+                    "radius": 9.973
                 },
                 {
                     "number": 4,
                     "text": "Step forward",
                     "triggertype": "scene",
-                    "x": -5.711,
-                    "y": -7.960,
-                    "z": -18.829
+                    "yaw": -5.711,
+                    "pitch": -7.960,
+                    "radius": -18.829
                 }
             ]
         },
@@ -255,103 +255,103 @@
                 {
                     "triggertype": "image",
                     "src" : "#TawakkolKarmanObit",
-                    "x": 8.590,
-                    "y": -5.144,
-                    "z": 0.867
+                    "yaw": 8.590,
+                    "pitch": -5.144,
+                    "radius": 0.867
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster1",
-                    "x": 10.004,
-                    "y": -0.103,
-                    "z": -3.088
+                    "yaw": 10.004,
+                    "pitch": -0.103,
+                    "radius": -3.088
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster2",
-                    "x": 10.954,
-                    "y": -1.355,
-                    "z": 0.000
+                    "yaw": 10.954,
+                    "pitch": -1.355,
+                    "radius": 0.000
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster3",
-                    "x": 10.527,
-                    "y": -2.947,
-                    "z": 2.727
+                    "yaw": 10.527,
+                    "pitch": -2.947,
+                    "radius": 2.727
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster4",
-                    "x": 9.257,
-                    "y": -4.045,
-                    "z": -0.468
+                    "yaw": 9.257,
+                    "pitch": -4.045,
+                    "radius": -0.468
                 },
                 {
                     "triggertype": "image",
                     "src" : "#veraRubinObit",
-                    "x": 10.431,
-                    "y": -6.131,
-                    "z": 0.269
+                    "yaw": 10.431,
+                    "pitch": -6.131,
+                    "radius": 0.269
                 },
                 {
                     "triggertype": "image",
                     "src" : "#veraRubinPoster",
-                    "x": 10.937,
-                    "y": -2.051,
-                    "z": -1.336
+                    "yaw": 10.937,
+                    "pitch": -2.051,
+                    "radius": -1.336
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungObit",
-                    "x": 3.775,
-                    "y": -3.764,
-                    "z": -10.327
+                    "yaw": 3.775,
+                    "pitch": -3.764,
+                    "radius": -10.327
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungPoster2",
-                    "x": 2.213,
-                    "y": 0.012,
-                    "z": -11.489
+                    "yaw": 2.213,
+                    "pitch": 0.012,
+                    "radius": -11.489
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungPoster1",
-                    "x": 3.667,
-                    "y": -0.734,
-                    "z": -10.608
+                    "yaw": 3.667,
+                    "pitch": -0.734,
+                    "radius": -10.608
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungPoster3",
-                    "x": 4.625,
-                    "y": -2.785,
-                    "z": -10.858
+                    "yaw": 4.625,
+                    "pitch": -2.785,
+                    "radius": -10.858
                 },
                 {
                     "number": 3,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": -17.019,
-                    "y": -7.960,
-                    "z": 4.709
+                    "yaw": -17.019,
+                    "pitch": -7.960,
+                    "radius": 4.709
                 },
                 {
                     "number": 5,
                     "text": "Step forward",
                     "triggertype": "scene",
-                    "x": 1.051,
-                    "y": -7.960,
-                    "z": -6.942
+                    "yaw": 1.051,
+                    "pitch": -7.960,
+                    "radius": -6.942
                 },
                 {
                     "number": 6,
                     "text": "Move here",
                     "triggertype": "scene",
-                    "x": -8.515,
-                    "y": -7.960,
-                    "z": -1.960
+                    "yaw": -8.515,
+                    "pitch": -7.960,
+                    "radius": -1.960
                 }
             ]
         },
@@ -362,121 +362,121 @@
                  "number": 6,
                  "text": "Move here",
                   "triggertype": "walkToImage",
-                      "startingAngle":30,
+                      "startingAngle":40,
                   "src" : "#alanTuringObit",
-                  "x": -10,
-                  "y": -4.4,
-                  "z": -1.2
+                  "yaw": -10,
+                  "pitch": -4.4,
+                  "radius": -1.2
               },
               {
                 "number": 6,
                 "text": "Move here",
                   "triggertype": "walkToImage",
                   "src" : "#AlanTuringPoster",
-                  "x": -10,
-                  "y": -3.5,
-                  "z": -0.35
+                  "yaw": -10,
+                  "pitch": -3.5,
+                  "radius": -0.35
               },
               {
                   "triggertype": "image",
                   "src" : "#TawakkolKarmanObit",
-                  "x": 5,
-                  "y": -4.8,
-                  "z": 10
+                  "yaw": 5,
+                  "pitch": -4.8,
+                  "radius": 10
               },
               {
                   "triggertype": "image",
                   "src" : "#tawakkakolKarmenPoster1",
-                  "x": 9.2,
-                  "y": -3,
-                  "z": 10
+                  "yaw": 9.2,
+                  "pitch": -3,
+                  "radius": 10
               },
               {
                   "triggertype": "image",
                   "src" : "#tawakkakolKarmenPoster2",
-                  "x": 6,
-                  "y": -1.355,
-                  "z": 10
+                  "yaw": 6,
+                  "pitch": -1.355,
+                  "radius": 10
               },
               {
                   "triggertype": "image",
                   "src" : "#tawakkakolKarmenPoster3",
-                  "x": 4.3,
-                  "y": -2,
-                  "z": 10
+                  "yaw": 4.3,
+                  "pitch": -2,
+                  "radius": 10
               },
               {
                   "triggertype": "image",
                   "src" : "#tawakkakolKarmenPoster4",
-                  "x": 6,
-                  "y": -3.7,
-                  "z": 10
+                  "yaw": 6,
+                  "pitch": -3.7,
+                  "radius": 10
               },
                 {
                     "triggertype": "image",
                     "src" : "#veraRubinObit",
-                    "x": 10.431,
-                    "y": -6.131,
-                    "z": 0.269
+                    "yaw": 10.431,
+                    "pitch": -6.131,
+                    "radius": 0.269
                 },
                 {
                     "triggertype": "image",
                     "src" : "#veraRubinPoster",
-                    "x": 10.937,
-                    "y": -2.051,
-                    "z": -1.336
+                    "yaw": 10.937,
+                    "pitch": -2.051,
+                    "radius": -1.336
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungObit",
-                    "x": 3.775,
-                    "y": -3.764,
-                    "z": -10.327
+                    "yaw": 3.775,
+                    "pitch": -3.764,
+                    "radius": -10.327
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungPoster2",
-                    "x": 2.213,
-                    "y": 0.012,
-                    "z": -11.489
+                    "yaw": 2.213,
+                    "pitch": 0.012,
+                    "radius": -11.489
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungPoster1",
-                    "x": 3.667,
-                    "y": -0.734,
-                    "z": -10.608
+                    "yaw": 3.667,
+                    "pitch": -0.734,
+                    "radius": -10.608
                 },
                 {
                     "triggertype": "image",
                     "src" : "#stellaYoungPoster3",
-                    "x": 4.625,
-                    "y": -2.785,
-                    "z": -10.858
+                    "yaw": 4.625,
+                    "pitch": -2.785,
+                    "radius": -10.858
                 },
                 {
                     "number": 4,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": 2.717,
-                    "y": -7.970,
-                    "z": 6.008
+                    "yaw": 2.717,
+                    "pitch": -7.970,
+                    "radius": 6.008
                 },
                 {
                     "number": 6,
                     "text": "Move here",
                     "triggertype": "scene",
-                    "x": -9.278,
-                    "y": -7.960,
-                    "z": -0.934
+                    "yaw": -9.278,
+                    "pitch": -7.960,
+                    "radius": -0.934
                 },
                 {
                     "number": 2,
                     "text": "Move back here",
                     "triggertype": "scene",
-                    "x": -19.104,
-                    "y": -7.960,
-                    "z": 2.398
+                    "yaw": -19.104,
+                    "pitch": -7.960,
+                    "radius": 2.398
                 }
             ]
         },
@@ -486,61 +486,165 @@
                 {
                     "triggertype": "image",
                     "src" : "#alanTuringObit",
-                    "x": -3.614,
-                    "y": -4.460,
-                    "z": -9.121
+                    "yaw": -3.614,
+                    "pitch": -4.460,
+                    "radius": -9.121
                 },
                 {
                     "triggertype": "image",
                     "src" : "#AlanTuringPoster",
-                    "x": -5.929,
-                    "y": -4.930,
-                    "z": -9.700
+                    "yaw": -5.929,
+                    "pitch": -4.930,
+                    "radius": -9.700
                 },
                 {
                     "triggertype": "image",
                     "src" : "#hedyLamarrObit",
-                    "x": 17.890,
-                    "y": -2.455,
-                    "z": -3.319
+                    "yaw": 17.890,
+                    "pitch": -2.455,
+                    "radius": -3.319
                 },
                 {
                     "triggertype": "image",
                     "src" : "#HedyLamarrPoster",
-                    "x": 9.729,
-                    "y": -0.177,
-                    "z": -5.234
+                    "yaw": 9.729,
+                    "pitch": -0.177,
+                    "radius": -5.234
                 },
                 {
                     "triggertype": "image",
                     "src" : "#missingPoster",
-                    "x": 5.065,
-                    "y": -3.744,
-                    "z": -13.714
+                    "yaw": 5.065,
+                    "pitch": -3.744,
+                    "radius": -13.714
+                },
+                {
+                  "number": 5,
+                    "triggertype": "walkToImage",
+                    "src" : "#veraRubinObit",
+                    "yaw": 3.3,
+                    "pitch": -4,
+                    "radius": 9.8
+                },
+                {
+                  "number": 5,
+                    "triggertype": "walkToImage",
+                    "src" : "#veraRubinPoster",
+                    "yaw": 4.2,
+                    "pitch": -1.6,
+                    "radius": 9.8
+                },
+
+                {
+                    "triggertype": "walkToImage",
+                    "src" : "#stellaYoungObit",
+                    "yaw": 6.9,
+                    "pitch": -3,
+                    "radius": 3
+                },
+                {
+                    "triggertype": "walkToImage",
+                    "src" : "#stellaYoungPoster2",
+                    "yaw": 8,
+                    "pitch": -0.5,
+                    "radius": 1.8
+                },
+                {
+                    "triggertype": "walkToImage",
+                    "src" : "#stellaYoungPoster1",
+                    "yaw": 7,
+                    "pitch": -0.5,
+                    "radius": 3
+                },
+                {
+                    "triggertype": "walkToImage",
+                    "src" : "#stellaYoungPoster3",
+                    "yaw": 7,
+                    "pitch": -2,
+                    "radius": 3.5
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#TawakkolKarmanObit",
+                    "yaw": -4,
+                    "pitch": -4,
+                    "radius": 10
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster1",
+                    "yaw": -2.3,
+                    "pitch": -3,
+                    "radius": 15.5
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster2",
+                    "yaw": -3.6,
+                    "pitch": -1.355,
+                    "radius": 12
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster3",
+                    "yaw": -4.2,
+                    "pitch": -2,
+                    "radius": 9.5
+                },
+                {
+                    "triggertype": "image",
+                    "src" : "#tawakkakolKarmenPoster4",
+                    "yaw": -3.6,
+                    "pitch": -3.3,
+                    "radius": 12
+                },
+                {
+                  "number": 3,
+                  "triggertype": "walkToImage",
+                  "src" : "#margretHamiltonObit",
+                    "yaw": -10,
+                    "pitch": -1.7,
+                    "radius": -7
+                },
+                {
+                  "number": 3,
+                  "triggertype": "walkToImage",
+                  "src" : "#margretHamiltonPoster1",
+                    "yaw": -10,
+                    "pitch": -0.5,
+                    "radius": -6.92
+                },
+                {
+                  "number": 3,
+                  "triggertype": "walkToImage",
+                  "src" : "#margretHamiltonPoster2",
+                  "yaw": -10,
+                  "pitch": -0.5,
+                  "radius": -5.9
                 },
                 {
                     "number": 5,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": 3.362,
-                    "y": -7.960,
-                    "z": 7.451
+                    "yaw": 3.362,
+                    "pitch": -7.960,
+                    "radius": 7.451
                 },
                 {
                     "number": 3,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": 19.462,
-                    "y": 15.314,
-                    "z": 10.246
+                    "yaw": 19.462,
+                    "pitch": 15.314,
+                    "radius": 10.246
                 },
                 {
                     "number": 4,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "x": -3.382,
-                    "y": -7.960,
-                    "z": 8.893
+                    "yaw": -3.382,
+                    "pitch": -7.960,
+                    "radius": 8.893
                 }
             ]
         }

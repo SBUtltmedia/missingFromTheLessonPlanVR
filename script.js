@@ -51,7 +51,7 @@ function leftPad(num) {
 
 function assetsLoaded() {
 
-  loadSphere(startingRoom, 5,0);
+  loadSphere(startingRoom, 6,0);
   var markers = document.getElementById('markers')
 
   sceneEl = document.querySelector('a-scene');
@@ -64,10 +64,11 @@ function loadSphere(room, num,angle) {
   $.getJSON(room + ".json", function(data) {
     currentLocation =data.spheres[num];
     currentLocation.room=room;
-    currentLocation.startingAngle;
-    angle = (typeof angle !== 'undefined') ?  angle : 0;
-    angle=  angle||currentLocation.startingAngle;
-    document.querySelector('#camera').setAttribute('rotation', {x: angle, y: 0, z: 0});
+    //currentLocation.startingAngle;
+    //angle = (typeof angle !== 'undefined') ?  angle : 0;
+    //angle=  angle||currentLocation.startingAngle;
+    //console.log(angle);
+    //document.querySelector('#camera').setAttribute('rotation', {x: angle, y: 0, z: 0});
 
     $("#sky1").attr("src",   currentLocation.leftImg);
 
@@ -124,11 +125,12 @@ function showPoster(mkr) {
 
 
 
-
 function makeMarker(mkr, id) {
-
+  var markerHolder = document.createElement('a-entity');
+  markerHolder.setAttribute("id", "markerHolder" + id)
   if (mkr.triggertype == "scene") {
     var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
+
     var marker = document.createElement('a-image');
     marker.setAttribute('src', "img/nextMarker.png")
     marker.setAttribute('scale', "2 2 2")
@@ -145,15 +147,14 @@ function makeMarker(mkr, id) {
   }
 
   marker.setAttribute('position', {
-    x: mkr.x,
-    y: mkr.y,
-    z: mkr.z
+    x: mkr.radius,
+    y: 0,
+    z: 0
   });
-  //        marker.setAttribute('rotation', {
-  //          x: 10,
-  //        y:spin,
-  //        z:10
-  //        });
+         markerHolder.setAttribute('rotation', {
+         y:mkr.pitch,
+         z:mkr.yaw
+         });
   for (var key in mkr) {
 
     marker.setAttribute('data-' + key, mkr[key])
@@ -164,7 +165,8 @@ function makeMarker(mkr, id) {
   marker.setAttribute('data-num', mkr.number);
   marker.setAttribute('data-room', mkr.room || "");
   marker.setAttribute("class", "marker")
- document.querySelector('#markers').appendChild(marker)
+  document.querySelector('#markers').appendChild(markerHolder)
+  document.querySelector('#markerHolder'+ id).appendChild(marker)
 }
 
 function makeMarkers(currentLocation) {

@@ -9,6 +9,19 @@
     <script src="spinner.js"></script>
     <script src="spinnerq.js"></script>
     <script src="script.js"></script>
+    <script>
+    AFRAME.registerComponent('orbit', {
+               init: function() {
+
+               },
+
+               tick: function() {
+
+                    console.log(  document.querySelector('#camera').getAttribute('rotation'))
+
+               }
+           });
+</script>
 </head>
 
 <body>
@@ -61,7 +74,7 @@
       <img id="missingPoster" src="img/marvin/posters/MissingFromTheLessonPlan.png">
     </a-assets>
 
-        <a-entity camera id="camera" look-controls postition="0 0 0">
+        <a-entity camera id="camera"  orbit look-controls postition="0 0 0">
             <a-entity daydream-controller></a-entity>
             <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 1000" scale="0.3 0.3 0.3" position="0 0 -0.3" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat">
 
@@ -85,6 +98,10 @@
         <!-- <a-entity id="leftHand" position="0 2 0" hand-controls="left" grab></a-entity> -->
         <!-- <a-entity id="rightHand" position="0 2 0" hand-controls="right" grab></a-entity> -->
     </a-scene>
+
+
+
+
 </body>
 
 </html>
