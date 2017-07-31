@@ -35,7 +35,7 @@ AFRAME.registerComponent('cursor-listener', {
         hudA.setAttribute("visible", false);
         makeMarkers(currentLocation)
 
-
+console.log(showPoster)
 
       }
 
@@ -88,29 +88,24 @@ function showPoster(mkr) {
   poster.setAttribute("visible", true);
   poster.emit('hudShow');
 
-  eX = $(mkr).data("x");
-  eY = $(mkr).data("y");
-  eZ = $(mkr).data("z");
+  eX = $(mkr).data("pitch");
+  eY = $(mkr).data("yaw");
+  eZ = $(mkr).data("radius");
 
-  var spinLeftRight = Math.atan2(eX, eZ) * (180 / Math.PI) + 180;
+  //var spinLeftRight = Math.atan2(eX, eZ) * (180 / Math.PI) + 180;
   var mag = Math.sqrt(eX * eX + eZ * eZ)
-  var spinUpDown = Math.atan2(mag, eY) * (180 / Math.PI) + 180;
+  //var spinUpDown = Math.atan2(mag, eY) * (180 / Math.PI) + 180;
   // var spinUpDown=0;
 
   //var testObject = document.createElement('a-image');
   poster.setAttribute('src', $(mkr).data("src"));
   poster.setAttribute('rotation', {
-    x: spinUpDown + 270,
-    y: spinLeftRight + 180,
-    z: 180,
+    y: eX + 90,
+    z: eY - 16,
   });
   //poster.setAttribute('height', 50);
   //poster.setAttribute('width', 50);
-  poster.setAttribute('position', {
-    x: 0,
-    y: 0,
-    z: 0
-  });
+
   /*
   $("#closeBtn").setAttribute('position', {
     x: 1,
@@ -130,15 +125,14 @@ function makeMarker(mkr, id) {
   markerHolder.setAttribute("id", "markerHolder" + id)
   if (mkr.triggertype == "scene") {
     var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
-
     var marker = document.createElement('a-image');
     marker.setAttribute('src', "img/nextMarker.png")
     marker.setAttribute('scale', "2 2 2")
     marker.setAttribute('opacity', ".8")
     marker.setAttribute('rotation', {
       x: -90,
-      y: spin
     });
+
   } else {
     var marker = document.createElement('a-sphere');
     marker.setAttribute('radius', "0.2")

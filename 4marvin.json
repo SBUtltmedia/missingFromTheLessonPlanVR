@@ -205,23 +205,23 @@
                 {
                   "triggertype": "image",
                   "src" : "#margretHamiltonObit",
-                    "yaw": 7.721,
-                    "pitch": -5.479,
-                    "radius": 1.300
+                    "yaw": -41.5,
+                    "pitch": -11,
+                    "radius": 7
                 },
                 {
                   "triggertype": "image",
                   "src" : "#margretHamiltonPoster2",
-                    "yaw": 8.105,
-                    "pitch": -2.219,
-                    "radius": -2.200
+                    "yaw": 0,
+                    "pitch": 0,
+                    "radius": 4
                 },
                 {
                   "triggertype": "image",
                   "src" : "#margretHamiltonPoster1",
-                  "yaw": 8.722,
-                  "pitch": -2.574,
-                  "radius": 1.872
+                  "yaw": 0,
+                  "pitch": 0,
+                  "radius": 4
                 },
                 {
                     "number": 2,
@@ -486,141 +486,141 @@
                 {
                     "triggertype": "image",
                     "src" : "#alanTuringObit",
-                    "yaw": -3.614,
-                    "pitch": -4.460,
-                    "radius": -9.121
+                    "yaw": 25,
+                    "pitch": 292,
+                    "radius": -8
                 },
                 {
                     "triggertype": "image",
                     "src" : "#AlanTuringPoster",
-                    "yaw": -5.929,
-                    "pitch": -4.930,
-                    "radius": -9.700
+                    "yaw": 17,
+                    "pitch": 302,
+                    "radius": -8
                 },
                 {
                     "triggertype": "image",
                     "src" : "#hedyLamarrObit",
-                    "yaw": 17.890,
-                    "pitch": -2.455,
-                    "radius": -3.319
+                    "yaw": 9,
+                    "pitch": 191,
+                    "radius": -10
                 },
                 {
                     "triggertype": "image",
                     "src" : "#HedyLamarrPoster",
-                    "yaw": 9.729,
-                    "pitch": -0.177,
-                    "radius": -5.234
+                    "yaw": 0,
+                    "pitch": 210,
+                    "radius": -10
                 },
                 {
                     "triggertype": "image",
                     "src" : "#missingPoster",
-                    "yaw": 5.065,
-                    "pitch": -3.744,
+                    "yaw": 15.5,
+                    "pitch": 250,
                     "radius": -13.714
                 },
                 {
                   "number": 5,
                     "triggertype": "walkToImage",
                     "src" : "#veraRubinObit",
-                    "yaw": 3.3,
-                    "pitch": -4,
-                    "radius": 9.8
+                    "yaw": 20,
+                    "pitch": 108.5,
+                    "radius": -9.8
                 },
                 {
                   "number": 5,
                     "triggertype": "walkToImage",
                     "src" : "#veraRubinPoster",
-                    "yaw": 4.2,
-                    "pitch": -1.6,
-                    "radius": 9.8
+                    "yaw": 15,
+                    "pitch": 115,
+                    "radius": -9.8
                 },
 
                 {
                     "triggertype": "walkToImage",
                     "src" : "#stellaYoungObit",
-                    "yaw": 6.9,
-                    "pitch": -3,
-                    "radius": 3
+                    "yaw": 23,
+                    "pitch": 157,
+                    "radius": -10
                 },
                 {
                     "triggertype": "walkToImage",
                     "src" : "#stellaYoungPoster2",
-                    "yaw": 8,
-                    "pitch": -0.5,
-                    "radius": 1.8
+                    "yaw": 9,
+                    "pitch": 167,
+                    "radius": -10
                 },
                 {
                     "triggertype": "walkToImage",
                     "src" : "#stellaYoungPoster1",
-                    "yaw": 7,
-                    "pitch": -0.5,
-                    "radius": 3
+                    "yaw": 8.75,
+                    "pitch": 158,
+                    "radius": -10
                 },
                 {
                     "triggertype": "walkToImage",
                     "src" : "#stellaYoungPoster3",
-                    "yaw": 7,
-                    "pitch": -2,
-                    "radius": 3.5
+                    "yaw": 15,
+                    "pitch": 154,
+                    "radius": -10
                 },
                 {
                     "triggertype": "image",
                     "src" : "#TawakkolKarmanObit",
-                    "yaw": -4,
-                    "pitch": -4,
-                    "radius": 10
+                    "yaw": 21,
+                    "pitch": 69,
+                    "radius": -11
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster1",
-                    "yaw": -2.3,
-                    "pitch": -3,
-                    "radius": 15.5
+                    "yaw": 11,
+                    "pitch": 82,
+                    "radius": -11
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster2",
-                    "yaw": -3.6,
-                    "pitch": -1.355,
-                    "radius": 12
+                    "yaw": 10,
+                    "pitch": 72.5,
+                    "radius": -11
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster3",
-                    "yaw": -4.2,
-                    "pitch": -2,
-                    "radius": 9.5
+                    "yaw": 13.5,
+                    "pitch": 66,
+                    "radius": -11
                 },
                 {
                     "triggertype": "image",
                     "src" : "#tawakkakolKarmenPoster4",
-                    "yaw": -3.6,
-                    "pitch": -3.3,
-                    "radius": 12
+                    "yaw": 15,
+                    "pitch": 72.5,
+                    "radius": -11
                 },
                 {
                   "number": 3,
                   "triggertype": "walkToImage",
                   "src" : "#margretHamiltonObit",
-                    "yaw": -10,
-                    "pitch": -1.7,
-                    "radius": -7
+                    "yaw": 9.8,
+                    "pitch": 324.5,
+                    "radius": -20
                 },
                 {
                   "number": 3,
                   "triggertype": "walkToImage",
                   "src" : "#margretHamiltonPoster1",
-                    "yaw": -10,
-                    "pitch": -0.5,
-                    "radius": -6.92
+                    "yaw": 3.5,
+                    "pitch": 325.5,
+                    "radius": -20
                 },
                 {
                   "number": 3,
                   "triggertype": "walkToImage",
                   "src" : "#margretHamiltonPoster2",
-                  "yaw": -10,
-                  "pitch": -0.5,
-                  "radius": -5.9
+                  "yaw": 3.65,
+                  "pitch": 329,
+                  "radius": -20
                 },
                 {
                     "number": 5,
@@ -642,9 +642,9 @@
                     "number": 4,
                     "text": "Step back",
                     "triggertype": "scene",
-                    "yaw": -3.382,
-                    "pitch": -7.960,
-                    "radius": 8.893
+                    "yaw": 0,
+                    "pitch": 0,
+                    "radius": -1
                 }
             ]
         }
