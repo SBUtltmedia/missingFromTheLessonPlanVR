@@ -12,6 +12,7 @@ AFRAME.registerComponent('cursor-listener', {
   init: function() {
 
     this.el.addEventListener('click', function(evt) {
+
       var newroom =$(evt.target).data("room") || currentLocation.room;
       if ($(evt.target).data("triggertype") == "scene") {
           loadSphere(newroom , $(evt.target).data("number"));
@@ -35,7 +36,7 @@ AFRAME.registerComponent('cursor-listener', {
         hudA.setAttribute("visible", false);
         makeMarkers(currentLocation)
 
-console.log(showPoster)
+        console.log(showPoster)
 
       }
 
@@ -91,6 +92,7 @@ function showPoster(mkr) {
   eX = $(mkr).data("pitch");
   eY = $(mkr).data("yaw");
   eZ = $(mkr).data("radius");
+  roll = $(mkr).data("roll");
 
   //var spinLeftRight = Math.atan2(eX, eZ) * (180 / Math.PI) + 180;
   var mag = Math.sqrt(eX * eX + eZ * eZ)
@@ -101,7 +103,7 @@ function showPoster(mkr) {
   poster.setAttribute('src', $(mkr).data("src"));
   poster.setAttribute('rotation', {
     y: eX + 90,
-    z: eY - 16,
+    z: eY + roll,
   });
   //poster.setAttribute('height', 50);
   //poster.setAttribute('width', 50);

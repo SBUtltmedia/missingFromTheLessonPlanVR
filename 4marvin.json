@@ -495,7 +495,8 @@
                     "src" : "#AlanTuringPoster",
                     "yaw": 17,
                     "pitch": 302,
-                    "radius": -8
+                    "radius": -8,
+                    "roll": -16
                 },
                 {
                     "triggertype": "image",
@@ -516,7 +517,8 @@
                     "src" : "#missingPoster",
                     "yaw": 15.5,
                     "pitch": 250,
-                    "radius": -13.714
+                    "radius": -13.714,
+                    "roll": -16
                 },
                 {
                   "number": 5,
@@ -536,7 +538,7 @@
                 },
 
                 {
-                    "triggertype": "walkToImage",
+                    "triggertype": "image",
                     "src" : "#stellaYoungObit",
                     "yaw": 23,
                     "pitch": 157,
