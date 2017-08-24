@@ -1,0 +1,37 @@
+<html>
+<head>
+  <style>
+  body{
+  margin:0;
+  padding:0;
+  border:0;
+}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+$(function() {
+$("img").click(function(e) {
+
+  var offset = $(this).offset();
+  var relativeX = (e.pageX-1000)/1000*180;
+  var relativeY = (e.pageY-500)/500*90;
+
+  console.log('"yaw": ' + relativeY + ' , "pitch": ' + relativeX+ ' , "radius": -11');
+
+});
+});
+
+
+</script>
+
+
+
+</head>
+<body>
+<img src="img/marvin/4.jpg" width="2000" height="1000"/>
+</body>
+
+</html>

@@ -5,6 +5,15 @@ var currentLocation;
 $(function() {
   document.querySelector('a-assets').addEventListener('loaded', assetsLoaded)
   $('#loader').spin('large', '#FF0000')
+
+  $("html").on("click",function(){
+    var o={}
+  o.x=  sceneEl.querySelector('#camera').getAttribute('rotation').x;
+  o.y=  sceneEl.querySelector('#camera').getAttribute('rotation').y;
+  o.radius=-11;
+  console.log(JSON.stringify(o));
+  })
+
 });
 
 
@@ -15,14 +24,14 @@ AFRAME.registerComponent('cursor-listener', {
 
       var newroom =$(evt.target).data("room") || currentLocation.room;
       if ($(evt.target).data("triggertype") == "scene") {
-          loadSphere(newroom , $(evt.target).data("number"));
+          loadSphere(startingRoom, $(evt.target).data("number"),0);
       } else if ($(evt.target).data("triggertype") == "image") {
 
         showPoster(evt.target);
       }
     else   if ($(evt.target).data("triggertype") == "walkToImage") {
       var startingAngle =    $(evt.target).data("startingAngle")||0;
-          loadSphere(newroom , $(evt.target).data("number"),startingAngle);
+          loadSphere(newroom , $(evt.target).data("number"),0);
             showPoster(evt.target);
         }
 
@@ -52,7 +61,7 @@ function leftPad(num) {
 
 function assetsLoaded() {
 
-  loadSphere(startingRoom, 6,0);
+  loadSphere(startingRoom, 5,0);
   var markers = document.getElementById('markers')
 
   sceneEl = document.querySelector('a-scene');
@@ -89,51 +98,29 @@ function showPoster(mkr) {
   poster.setAttribute("visible", true);
   poster.emit('hudShow');
 
-  eX = $(mkr).data("pitch");
-  eY = $(mkr).data("yaw");
-  eZ = $(mkr).data("radius");
-  roll = $(mkr).data("roll");
-
-  //var spinLeftRight = Math.atan2(eX, eZ) * (180 / Math.PI) + 180;
-  var mag = Math.sqrt(eX * eX + eZ * eZ)
-  //var spinUpDown = Math.atan2(mag, eY) * (180 / Math.PI) + 180;
-  // var spinUpDown=0;
-
-  //var testObject = document.createElement('a-image');
   poster.setAttribute('src', $(mkr).data("src"));
   poster.setAttribute('rotation', {
-    y: eX + 90,
-    z: eY + roll,
+    y:$(mkr).data("y"),
+    x:$(mkr).data("x")
   });
-  //poster.setAttribute('height', 50);
-  //poster.setAttribute('width', 50);
 
-  /*
-  $("#closeBtn").setAttribute('position', {
-    x: 1,
-    y: 0,
-    z: 1
-  });
-  */
-
-  //
-  //$("#markers").prepend(testObject)
 }
 
 
 
 function makeMarker(mkr, id) {
+  var lastMarkerHolder = document.querySelector("#markerHolder" + id);
+  if(lastMarkerHolder){document.querySelector('#markers').removeChild(lastMarkerHolder);}
+
   var markerHolder = document.createElement('a-entity');
+
   markerHolder.setAttribute("id", "markerHolder" + id)
   if (mkr.triggertype == "scene") {
-    var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
-    var marker = document.createElement('a-image');
-    marker.setAttribute('src', "img/nextMarker.png")
-    marker.setAttribute('scale', "2 2 2")
-    marker.setAttribute('opacity', ".8")
-    marker.setAttribute('rotation', {
-      x: -90,
-    });
+  //  var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
+    var marker = document.createElement('a-sphere');
+    marker.setAttribute('color', "#2fff00");
+    marker.setAttribute('radius', "0.2");
+    marker.setAttribute('opacity', ".7");
 
   } else {
     var marker = document.createElement('a-sphere');
@@ -143,14 +130,13 @@ function makeMarker(mkr, id) {
   }
 
   marker.setAttribute('position', {
-    x: mkr.radius,
+    x: 0,
     y: 0,
-    z: 0
+    z: mkr.radius
   });
-         markerHolder.setAttribute('rotation', {
-         y:mkr.pitch,
-         z:mkr.yaw
-         });
+
+
+
   for (var key in mkr) {
 
     marker.setAttribute('data-' + key, mkr[key])
@@ -163,10 +149,16 @@ function makeMarker(mkr, id) {
   marker.setAttribute("class", "marker")
   document.querySelector('#markers').appendChild(markerHolder)
   document.querySelector('#markerHolder'+ id).appendChild(marker)
+  markerHolder.setAttribute('rotation', {
+  y:mkr.y,
+  x:mkr.x
+  });
+
+   //console.log(sceneEl.querySelector("#markerHolder" + id).getAttribute('rotation'))
 }
 
 function makeMarkers(currentLocation) {
-  $('.marker').remove();
+  $(".marker").remove();
 
   currentLocation.markers.forEach(function(val, index, array) {
   //Marker generation for current scene

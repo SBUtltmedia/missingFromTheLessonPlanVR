@@ -29,13 +29,13 @@
     <a-scene antialias="true">
 
       <a-assets timeout="10000">
-      <img id="sphere7" src="img/marvin/7.jpg">
       <img id="sphere6" src="img/marvin/6.jpg">
       <img id="sphere5" src="img/marvin/5.jpg">
       <img id="sphere4" src="img/marvin/4.jpg">
       <img id="sphere3" src="img/marvin/3.jpg">
       <img id="sphere2" src="img/marvin/2.jpg">
       <img id="sphere1" src="img/marvin/1.jpg">
+      <img id="sphere0" src="img/marvin/0.jpg">
       <img id="MaryPenningtonPoster" src="img/marvin/posters/MaryPenningtonPoster.png">
       <img id="MaryPenningtonPoster1" src="img/marvin/posters/MaryPenningtonPoster2.png">
       <img id="ceciliaPaynePoster" src="img/marvin/posters/ceciliaPaynePoster.png">
@@ -75,7 +75,6 @@
     </a-assets>
 
         <a-entity camera id="camera"  orbit look-controls postition="0 0 0">
-            <a-entity daydream-controller></a-entity>
             <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 1000" scale="0.3 0.3 0.3" position="0 0 -0.3" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat">
 
                 <a-animation begin="fusing" easing="ease-in" dur="1000" attribute="scale" fill="none" to="0.1 0.1 0.1"></a-animation>
@@ -88,8 +87,8 @@
         <a-entity id="markers">
 
                  <a-curvedimage transparent="true" id="posterHud" scale="0 0 0" position="0 0 0" rotation="0 0 0" height="0.8" radius="0.4" theta-start="-230" theta-length="100">
-                   <a-animation id="hudShow" begin="hudShow" attribute="scale" from="0 0 0" to="2.1 2.1 2.1" dur="900"></a-animation>
-                   <a-animation id="hudHide" begin="hudHide" attribute="scale" from="2.1 2.1 2.1" to="0 0 0"></a-animation>
+                   <a-animation id="hudShow" begin="hudShow" attribute="scale" from="0 0 0" to="3.1 3.1 3.1" dur="900"></a-animation>
+                   <a-animation id="hudHide" begin="hudHide" attribute="scale" from="3.1 3.1 3.1" to="0 0 0"></a-animation>
                    <a-box cursor-listener id="closeBtn" position="-0.346 0.351 -0.247" rotation="0 0 0" scale="0.5 0.5 0.5" depth="0.05" height="0.2" width="0.2" color="red"></a-box>
 
       </a-curvedimage>
