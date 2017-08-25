@@ -61,15 +61,33 @@ function leftPad(num) {
 
 function assetsLoaded() {
 
-  loadSphere(startingRoom, 5,0);
+  sceneEl = document.querySelector('a-scene');
+  loadSphere(startingRoom, 5,-20.282705947630927);
+
   var markers = document.getElementById('markers')
 
-  sceneEl = document.querySelector('a-scene');
+
   $('#loader').spin(false)
   $("#loader").remove();
 }
 
 function loadSphere(room, num,angle) {
+  //Start by setting the Look-at-angle so the camera faces the right way
+  //You need to disable the look-controls first and then reenable them after setting rotation
+  sceneEl.querySelector('#camera').setAttribute('look-controls', {enabled: false})
+  if (!angle){
+    sceneEl.querySelector('#camera').setAttribute('rotation', {
+      y: 0,
+      x: 0,
+      z: 0
+    });
+  }
+  else {
+    sceneEl.querySelector('#camera').setAttribute('rotation', {
+      y: angle,
+    });
+  }
+  sceneEl.querySelector('#camera').setAttribute('look-controls', {enabled: true})
 
   $.getJSON(room + ".json", function(data) {
     currentLocation =data.spheres[num];
@@ -93,6 +111,7 @@ function loadSphere(room, num,angle) {
 
 
 function showPoster(mkr) {
+  console.log($(mkr))
   var poster = document.getElementById('posterHud')
 
   poster.setAttribute("visible", true);
@@ -165,7 +184,5 @@ function makeMarkers(currentLocation) {
   makeMarker(val, index);
 });
 
-$(".marker").on("clck", function(evt) {
-
-});
+  showPoster("#marker4");
 }
