@@ -58,10 +58,33 @@
                   "x":-14.782311114375231,"y":646.0672097895159,"radius":-11
                 },
                 {
+                  "triggertype": "image",
+                  "src" : "#karlHeinrichUlrichsObit",
+                  "x":-13.17802928800896,"y":-24.751776749651476,"radius":-11
+                },
+                {
+                    "number": 6,
+                    "text": "Step back",
+                    "triggertype": "scene",
+                    "x":-25.783100780887082,"y":-890.2618220742814,"radius":-16
+                },
+                {
+                    "number": 5,
+                    "text": "Step back",
+                    "triggertype": "scene",
+                    "x":-31.85645340927381,"y":-1035.6785104784813,"radius":-16
+                },
+                {
                     "number": 2,
                     "text": "Step back",
                     "triggertype": "scene",
                     "x":-20.16811438860499,"y":-343.3163108423891,"radius":-16
+                },
+                {
+                    "number": 3,
+                    "text": "Step forward",
+                    "triggertype": "scene",
+                    "x":-21.42862153789282,"y":-1044.3874689644717,"radius":-10
                 },
                 {
                     "number": 4,
@@ -136,6 +159,57 @@
                     "x":-9.969465635276332,"y":9.511099399171703,"radius":-11
                 },
                 {
+                   "number": 5,
+                    "triggertype": "walkToImage",
+                    "startingAngle":40,
+                    "src" : "#alanTuringObit",
+                    "x":-20.51188906568347,"y":87.77713421404194,"radius":-11
+                },
+                {
+                  "number": 5,
+                  "text": "Move here",
+                    "triggertype": "walkToImage",
+                    "src" : "#AlanTuringPoster",
+                    "x":-15.584452027558386,"y":93.50671216535018,"radius":-11
+                },
+                {
+                  "number": 5,
+                  "text": "Move here",
+                    "triggertype": "walkToImage",
+                    "src" : "#missingPoster",
+                    "x":-11.917522138721115,"y":66.57769579420146,"radius":-11
+                },
+                {
+                    "number": 5,
+                    "triggertype": "walkToImage",
+                    "src" : "#hedyLamarrObit",
+                    "x":-5.958761069360565,"y":-330.4820562314579,"radius":-11
+                },
+                {
+                    "number": 5,
+                    "triggertype": "walkToImage",
+                    "src" : "#HedyLamarrPoster",
+                    "x":-1.3750987083139758,"y":-317.1894353844234,"radius":-11
+                },
+                {
+                    "number": 4,
+                    "triggertype": "walkToImage",
+                    "src" : "#maeJemisonPoem",
+                    "x":-12.261296815799597,"y":-644.2337448450987,"radius":-11
+                },
+                {
+                    "number": 4,
+                    "triggertype": "walkToImage",
+                    "src" : "#maeJemisonPoster",
+                    "x":-11.917522138721102,"y":-643.0878292548367,"radius":-11
+                },
+                {
+                    "number": 4,
+                    "triggertype": "walkToImage",
+                    "src" : "#maeJemisonObit",
+                    "x":-13.521803965087408,"y":-639.4208993659984,"radius":-11
+                },
+                {
                     "number": 3,
                     "text": "Step back",
                     "triggertype": "scene",
@@ -152,6 +226,18 @@
                     "text": "Step forward",
                     "triggertype": "scene",
                     "x":-24.178818954520754,"y":124.79020777949302,"radius":-17
+                },
+                {
+                    "number": 6,
+                    "text": "Step forward",
+                    "triggertype": "scene",
+                    "x":-16.61577605879387,"y":112.52891096369402,"radius":-17
+                },
+                {
+                    "number": 0,
+                    "text": "Step forward",
+                    "triggertype": "scene",
+                    "x":-18.220057885160177,"y":121.3524610087082,"radius":-17
                 },
                 {
                     "number": 5,
@@ -216,16 +302,16 @@
                 {
                     "triggertype": "image",
                     "src" : "#veraRubinObit",
-                    "x": 10.431,
-                    "y": -6.131,
-                    "radius": 0.269
+                    "x": -29.220847551672012,
+                    "y": 268.6026143573294,
+                    "radius": -11
                 },
                 {
                     "triggertype": "image",
                     "src" : "#veraRubinPoster",
-                    "x": 10.937,
-                    "y": -2.051,
-                    "radius": -1.336
+                    "x": -8.13600069085767,
+                    "y": -443.3547418722288,
+                    "radius": -11
                 },
                 {
                     "triggertype": "image",
@@ -328,6 +414,30 @@
                     "triggertype": "image",
                     "src" : "#DouglisMarrPoem",
                     "x":-23.605861159389924,"y":171.19978918508963,"radius":-11
+                },
+                {
+                  "number": 1,
+                    "triggertype": "walkToImage",
+                    "src" : "#margretHamiltonObit",
+                    "x":-23.376678041337595,"y":-1006.5722544858263,"radius":-11
+                },
+                {
+                  "number": 1,
+                    "triggertype": "walkToImage",
+                    "src" : "#margretHamilton1",
+                    "x":-9.052733163067002,"y":-1006.9160291629046,"radius":-11
+                },
+                {
+                  "number": 1,
+                    "triggertype": "walkToImage",
+                    "src" : "#margretHamilton2",
+                    "x":-8.708958485988509,"y":-995.2276901422351,"radius":-11
+                },
+                {
+                    "number": 2,
+                    "text": "Step back",
+                    "triggertype": "scene",
+                    "x":-24.522593631599257,"y":-566.3114847073049,"radius":-11
                 },
                 {
                     "number": 1,
@@ -434,25 +544,103 @@
                   "number": 1,
                   "triggertype": "walkToImage",
                   "src" : "#margretHamiltonObit",
-                    "x":-8.136000690857662,"y":-305.27191324570066,"radius":-19
+                    "x":-9.281916281119353,"y":54.88935677353289,"radius":-19
                 },
                 {
                   "number": 1,
                   "triggertype": "walkToImage",
                   "src" : "#margretHamiltonPoster1",
-                    "x":-0.11459155902614963,"y":415.8527677059515,"radius":-19
+                    "x":-2.635605857601797,"y":55.576906127689874,"radius":-19
                 },
                 {
                   "number": 1,
                   "triggertype": "walkToImage",
                   "src" : "#margretHamiltonPoster2",
-                  "x":-0.5729577951307926,"y":-300.2298846485496,"radius":-19
+                  "x":-3.2085636527326207,"y":59.58761069360564,"radius":-19
+                },
+                {
+                  "number": 1,
+                  "triggertype": "walkToImage",
+                  "src" : "#karlHeinrichUlrichsObit",
+                  "x":-9.167324722093186,"y":78.15144325584467,"radius":-19
+                },
+                {
+                    "number": 4,
+                    "triggertype": "walkToImage",
+                    "src" : "#maeJemisonPoem",
+                    "x":-10.313240312354818,"y":-8.021409131831529,"radius":-11
+                },
+                {
+                    "number": 4,
+                    "triggertype": "walkToImage",
+                    "src" : "#maeJemisonPoster",
+                    "x":-9.3965078401455,"y":-5.042028597151246,"radius":-11
+                },
+                {
+                  "number": 4,
+                  "triggertype": "walkToImage",
+                  "src" : "#maeJemisonObit",
+                  "x":-11.229972784564136,"y":-0.5729577951308232,"radius":-19
+                },
+                {
+                  "number": 4,
+                  "triggertype": "walkToImage",
+                  "src" : "#lynnConwayObit",
+                  "x":-7.104676659622214,"y":367.03676356080433,"radius":-19
+                },
+                {
+                  "number": 4,
+                  "triggertype": "walkToImage",
+                  "src" : "#lynnConwayPoster1",
+                  "x":-1.9480565034448019,"y":369.9015525364581,"radius":-19
+                },
+                {
+                  "number": 4,
+                  "triggertype": "walkToImage",
+                  "src" : "#lynnConwayPoster2",
+                  "x":-2.2918311805232943,"y":6.531718864491389,"radius":-19
+                },
+                {
+                    "number": 0,
+                    "triggertype": "walkToImage",
+                    "src" : "#danielhaleObit",
+                    "x":-3.437746770784939,"y":51.45161000274795,"radius":-11
+                },
+                {
+                    "number": 4,
+                    "triggertype": "walkToImage",
+                    "src" : "#maryMahoneyObit",
+                    "x":-9.854874076250166,"y":28.074931961410343,"radius":-11
+                },
+                {
+                    "number": 4,
+                    "triggertype": "walkToImage",
+                    "src" : "#maryMahoneyPoster",
+                    "x":-4.812845479098916,"y":30.022988464855157,"radius":-11
+                },
+                {
+                    "number": 6,
+                    "triggertype": "walkToImage",
+                    "src" : "#ceciliaPaynePoster",
+                    "x":2.406422739549459,"y":13.865578642165916,"radius":-11
+                },
+                {
+                    "number": 6,
+                    "triggertype": "walkToImage",
+                    "src" : "#ceciliaPayneObt",
+                    "x":-0.5729577951308232,"y":15.469860468532222,"radius":-11
                 },
                 {
                     "number": 2,
                     "text": "Step back",
                     "triggertype": "scene",
                     "x":-45.034482697282684,"y":-203.1708341533877,"radius":-11
+                },
+                {
+                    "number": 0,
+                    "text": "Step back",
+                    "triggertype": "scene",
+                    "x":-13.063437728982775,"y":403.47687933112513,"radius":-11
                 },
                 {
                     "number": 1,
