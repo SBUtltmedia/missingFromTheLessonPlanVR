@@ -2,6 +2,7 @@ var startingRoom = "4marvin"
 var sceneEl;
 var markers;
 var currentLocation;
+var cameraCache;
 $(function() {
   document.querySelector('a-assets').addEventListener('loaded', assetsLoaded)
   $('#loader').spin('large', '#FF0000')
@@ -17,32 +18,46 @@ $(function() {
 });
 
 
+// AFRAME.registerComponent('resetorientation', {
+//   init: function () {
+//     var el = this.el;
+//     el.addEventListener('resetorientation', function () {
+//       console.log(el)
+//       el.setAttribute('rotation', {x:0,y:0,z:0});
+//     });
+//   }
+// });
+
+
 AFRAME.registerComponent('cursor-listener', {
   init: function() {
 
     this.el.addEventListener('click', function(evt) {
+console.log(evt)
+
+
       if($(evt.target).attr("id")=="closeBtn"){
-        //close poster button
-      hudHide(currentLocation)
+    hudHide(currentLocation)
 
       }
       else{
 
       var marker = evt.target.id
 
-      var newroom = markers[evt.target.id].number
-      if (markers[evt.target.id].number == 'undefined'){
-        var closeBtn = sceneEl.querySelector('#closeBtn').getAttribute('id')
-      }
 
-      if (markers[evt.target.id].triggerType == "walkToImage" ||markers[evt.target.id].triggerType== "scene") {
 
-        var startingAngle =markers[evt.target.id].startingangle;
-        loadSphere(startingRoom, markers[evt.target.id].number, startingAngle,markers[evt.target.id].src );
+
+      if (markers[marker].triggerType == "walkToImage" ||markers[marker].triggerType== "scene") {
+    hudHide(currentLocation)
+        var startingAngle =markers[marker].startingAngle;
+        loadSphere(startingRoom, markers[marker].number, startingAngle,markers[marker].src );
 
       }
-      if (markers[evt.target.id].triggerType== "image") {
-        showPoster(markers[evt.target.id].src);
+      if (markers[marker].triggerType== "image") {
+        showPoster(markers[marker].src);
+      }
+      if (markers[marker].triggerType== "video") {
+        showMovie(markers[marker].src);
       }
 
     }
@@ -71,7 +86,7 @@ function leftPad(num) {
 function assetsLoaded() {
 
   sceneEl = document.querySelector('a-scene');
-  console.log(sceneEl.querySelector('#marker4'));
+  cameraCache=$('#camera');
   loadSphere(startingRoom, 5, -20.282705947630927, "#missingPoster");
 
   var markers = document.getElementById('markers')
@@ -83,29 +98,37 @@ function assetsLoaded() {
 
 function loadSphere(room, sphereNum, angle, startingImage) {
     console.log(angle)
+    var cameraEl = document.querySelector('#camera');
+    // cameraEl.removeAttribute('camera');
+    //cameraEl.removeAttribute('look-controls');
+    //cameraEl.removeAttribute('rotation');
+    // cameraEl.setAttribute('camera');
+    //cameraEl.setAttribute('look-controls');
+    //cameraEl.setAttribute('rotation');
+
 
   //Start by setting the Look-at-angle so the camera faces the right way
   //You need to disable the look-controls first and then reenable them after setting rotation
-  sceneEl.querySelector('#camera').setAttribute('look-controls', {
-    enabled: false
-  })
+  // sceneEl.querySelector('#camera').setAttribute('look-controls', {
+  //   enabled: false
+  // })
   if (!angle) {
-    sceneEl.querySelector('#camera').setAttribute('rotation', {
+    sceneEl.querySelector('#tripod').setAttribute('rotation', {
       y: 0,
       x: 0,
       z: 0
     });
   } else {
 
-    sceneEl.querySelector('#camera').setAttribute('rotation', {
+    sceneEl.querySelector('#tripod').setAttribute('rotation', {
       x: 0,
-      y: angle,
+      y: 0,
       z: 0
     });
   }
-  sceneEl.querySelector('#camera').setAttribute('look-controls', {
-    enabled: true
-  })
+  // sceneEl.querySelector('#camera').setAttribute('look-controls', {
+  //   enabled: true
+  // })
 
   $.getJSON(room + ".json", function(data) {
     currentLocation = data.spheres[sphereNum];
@@ -147,15 +170,12 @@ return i;
 
 }
 
-//   markers.forEach(function(val,index){
-//
-// if(val.src=="#missingPoster")
-//
-// return index;
-// })
+
 }
 function showPoster(src) {
+
   var id =getIdFromSrc(src);
+    console.log(id,src)
   var poster = document.getElementById('posterHud')
 
   poster.setAttribute("visible", true);
@@ -167,6 +187,21 @@ function showPoster(src) {
   });
 
 }
+
+function showMovie(src) {
+
+  var id = getIdFromSrc(src);
+    console.log(id,src)
+  var video = document.getElementById('vidHud')
+
+  video.setAttribute("visible", true);
+  video.emit('vidShow');
+  //ˆvideo.setAttribute('src',markers[id].src);
+  video.play()
+  console.log(video.isPlaying)
+
+}
+
 
 
 
