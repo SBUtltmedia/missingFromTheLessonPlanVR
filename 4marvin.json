@@ -699,16 +699,16 @@
                 {
                    "number": 5,
                     "triggerType": "walkToImage",
-                    "startingAngle":40,
                     "src" : "#missingPoster",
-                    "x":-12.261296815799605,"y":53.85803274229742,"radius":-11
+                    "x":-12.261296815799605,"y":53.85803274229742,"radius":-11,
+                    "startingAngle":40
                 },
                 {
                    "number": 5,
                     "triggerType": "walkToImage",
-                    "startingAngle":40,
                     "src" : "#alanTuringObit",
-                    "x":-25.09555142673007,"y":83.42265497104792,"radius":-11
+                    "x":-25.09555142673007,"y":83.42265497104792,"radius":-11,
+                    "startingAngle":40
                 },
                 {
                   "number": 5,
@@ -822,6 +822,20 @@
                     "x": 1.1459155902616833,"y": 120.77950321357754,"radius": -10.858
                 },
                 {
+                  "number": 0,
+                    "triggerType": "walkToImage",
+                    "src" : "#danielhalePoster",
+                    "x":0.6875493541570235,"y":45.72203205144073,"radius":-11,
+                    "startingAngle": 0
+                },
+                {
+                  "number": 0,
+                    "triggerType": "walkToImage",
+                    "src" : "#danielhaleObit",
+                    "x":-6.990085100596014,"y":35.523383298112066,"radius":-11,
+                    "startingAngle": 0
+                },
+                {
                   "number": 1,
                     "triggerType": "walkToImage",
                     "src" : "#margretHamiltonObit",
@@ -891,7 +905,7 @@
                   "number":2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster2",
-                    "x":-2.7501974166279752,"y":-196.86829840694992,"radius":-16
+                    "x":-2.8647889756540845,"y":155.38615403948089,"radius":-16
                 },
                 {
                   "number":2,
@@ -931,6 +945,27 @@
                     "triggerType": "walkToImage",
                     "src" : "#missingPoster",
                     "x":-14.782311114375272,"y":580.2916549084962,"radius":-11
+                },
+                {
+                  "number": 6,
+                    "triggerType": "walkToImage",
+                    "src" : "#ShigeruMiyaPoster",
+                    "x":0.5729577951308529,"y":-50.764060648589954,"radius":-11,
+                    "startingAngle": 0
+                },
+                {
+                  "number": 6,
+                    "triggerType": "walkToImage",
+                    "src" : "#ceciliaPaynePoster",
+                    "x":2.291831180523324,"y":-34.60665082590072,"radius":-11,
+                    "startingAngle": 0
+                },
+                {
+                  "number": 6,
+                    "triggerType": "walkToImage",
+                    "src" : "#ceciliaPayneObt",
+                    "x":-2.635605857601757,"y":-30.366763141932626,"radius":-11,
+                    "startingAngle": 0
                 },
                 {
                     "number": 2,
@@ -1186,6 +1221,68 @@
                     "triggerType": "image",
                     "src" : "#ShigeruMiyaPoster",
                     "x":-0.6875493541569848,"y":640.7959980743138,"radius":-11
+                },
+                {
+                    "number": 0,
+                    "triggerType": "walkToImage",
+                    "src": "danielhalePoster",
+                    "x":  -2.750197416627957,"y":  523.5688331905441,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 0,
+                    "triggerType": "walkToImage",
+                    "src": "danielhaleObit",
+                    "x":  -15.928226704636893,"y":  505.57795842343614,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 1,
+                    "triggerType": "scene",
+                    "x":  -6.18794418741289,"y":  554.3939625685833,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 2,
+                    "triggerType": "scene",
+                    "x":  -3.0939720937064417,"y":  570.7805555093258,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 3,
+                    "triggerType": "scene",
+                    "x":  -3.2085636527326065,"y":  579.7186971133669,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 3,
+                    "triggerType": "scene",
+                    "x":  -2.635605857601783,"y":  590.0319374257226,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 4,
+                    "triggerType": "scene",
+                    "x":  -9.969465635276327,"y":  583.5002185612303,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 4,
+                    "triggerType": "scene",
+                    "x":  -9.167324722093172,"y":  603.5537413908116,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 4,
+                    "triggerType": "scene",
+                    "x":  -4.583662361046582,"y":  614.3253479392714,"radius":  -11,
+                    "startingAngle": 0
+                },
+                {
+                    "number": 5,
+                    "triggerType": "scene",
+                    "x":  -1.1459155902616411,"y":  599.313853706843,"radius":  -11,
+                    "startingAngle": 0
                 },
                 {
                     "number": 0,
