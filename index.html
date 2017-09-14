@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Missing From The Lesson Plan Virtual Reality</title>
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="spinner.js"></script>
     <script src="spinnerq.js"></script>
@@ -73,7 +74,7 @@
       <img id="HedyLamarrPoster" src="img/marvin/posters/HedyLamarrPoster.png">
       <img id="missingPoster" src="img/marvin/posters/MissingFromTheLessonPlan.png">
       <img id="karlHeinrichUlrichsObit" src="img/marvin/posters/karlHeinrichUlrichsObit.png">
-      <video id="testVideo" src="img/marvin/posters/testVideo.mp4">
+      <video id="testVideo" src="img/marvin/posters/karl.webm">
     </a-assets>
 <a-entity id="tripod">
         <a-entity camera   id="camera"  look-controls postition="0 0 0" >
@@ -95,7 +96,8 @@
                    <a-box cursor-listener id="closeBtn" position="-0.346 0.351 -0.247" rotation="0 0 0" scale="0.5 0.5 0.5" depth="0.05" height="0.2" width="0.2" color="red"></a-box>
                  </a-curvedimage>
 
-                   <a-video src="#testVideo" muted autoplay loop playsinline webkit-playsinline id="vidHud" scale="0 0 0" position="-19.127 1.097 12.456" rotation="1.031 95.455 0.745">
+                   <a-video src="#testVideo" type="video/mp4" muted autoplay loop playsinline webkit-playsinline id="vidHud" width="2" height="1" scale="0 0 0" position="-19.127 1.097 12.456" rotation="1.031 95.455 0.745">
+                     <a-entity video-controls="src:#testVideo"></a-entity>
                      <a-animation id="vidShow" begin="vidShow" attribute="scale" from="0 0 0" to="8.221 8.221 8.221" dur="900"></a-animation>
                      <a-animation id="vidHide" begin="vidHide" attribute="scale" from="8.221 8.221 8.221" to="0 0 0"></a-animation>
                      <a-box cursor-listener id="closeBtn" position="-0.346 0.351 -0.247" rotation="0 0 0" scale="0.5 0.5 0.5" depth="0.05" height="0.2" width="0.2" color="red"></a-box>
