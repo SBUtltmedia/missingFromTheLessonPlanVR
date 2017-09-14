@@ -12,7 +12,7 @@ $(function() {
     o.x = sceneEl.querySelector('#camera').getAttribute('rotation').x;
     o.y = sceneEl.querySelector('#camera').getAttribute('rotation').y;
     o.radius = -11;
-    console.log(JSON.stringify(o));
+
   })
 
 });
@@ -22,7 +22,7 @@ $(function() {
 //   init: function () {
 //     var el = this.el;
 //     el.addEventListener('resetorientation', function () {
-//       console.log(el)
+//
 //       el.setAttribute('rotation', {x:0,y:0,z:0});
 //     });
 //   }
@@ -33,7 +33,7 @@ AFRAME.registerComponent('cursor-listener', {
   init: function() {
 
     this.el.addEventListener('click', function(evt) {
-console.log(evt)
+
 
 
       if($(evt.target).attr("id")=="closeBtn"){
@@ -48,7 +48,12 @@ console.log(evt)
 
 
       if (markers[marker].triggerType == "walkToImage" ||markers[marker].triggerType== "scene") {
-    hudHide(currentLocation)
+
+        if(markers[marker].triggerType== "scene"){
+              hudHide(currentLocation)
+        }
+
+
         var startingAngle =markers[marker].startingAngle;
         loadSphere(startingRoom, markers[marker].number, startingAngle,markers[marker].src );
 
@@ -71,7 +76,7 @@ console.log(evt)
 
 
 function hudHide(currentLocation){
-
+console.log(currentLocation)
   var hudA = sceneEl.querySelector('#posterHud');
   hudA.emit('hudHide');
   hudA.setAttribute("visible", false);
@@ -97,7 +102,7 @@ function assetsLoaded() {
 }
 
 function loadSphere(room, sphereNum, angle, startingImage) {
-    console.log(angle)
+
     var cameraEl = document.querySelector('#camera');
     // cameraEl.removeAttribute('camera');
     //cameraEl.removeAttribute('look-controls');
@@ -122,7 +127,7 @@ function loadSphere(room, sphereNum, angle, startingImage) {
 
     sceneEl.querySelector('#tripod').setAttribute('rotation', {
       x: 0,
-      y: 0,
+      y: angle,
       z: 0
     });
   }
@@ -136,7 +141,7 @@ function loadSphere(room, sphereNum, angle, startingImage) {
     //currentLocation.startingAngle;
     //angle = (typeof angle !== 'undefined') ?  angle : 0;
     //angle=  angle||currentLocation.startingAngle;
-    //console.log(angle);
+    //
     //document.querySelector('#camera').setAttribute('rotation', {x: angle, y: 0, z: 0});
 
     $("#sky1").attr("src", currentLocation.leftImg);
@@ -175,7 +180,7 @@ return i;
 function showPoster(src) {
 
   var id =getIdFromSrc(src);
-    console.log(id,src)
+
   var poster = document.getElementById('posterHud')
 
   poster.setAttribute("visible", true);
@@ -191,14 +196,14 @@ function showPoster(src) {
 function showMovie(src) {
 
   var id = getIdFromSrc(src);
-    console.log(id,src)
+
   var video = document.getElementById('vidHud')
 
   video.setAttribute("visible", true);
   video.emit('vidShow');
   //ˆvideo.setAttribute('src',markers[id].src);
   video.play()
-  console.log(video.isPlaying)
+
 
 }
 
@@ -248,7 +253,7 @@ function makeMarker(mkr, id) {
     x: mkr.x
   });
 
-  //console.log(sceneEl.querySelector("#markerHolder" + id).getAttribute('rotation'))
+  //
 }
 
 function makeMarkers(currentLocation) {
