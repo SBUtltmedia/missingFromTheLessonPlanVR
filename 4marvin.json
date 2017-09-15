@@ -18,168 +18,168 @@
                     "triggerType": "walkToImage",
                     "src" : "#ceciliaPayneObt",
                     "x":-10.771606548459449,"y":851.1861004463503,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 190
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ceciliaPaynePoster",
                     "x":-5.156620156177375,"y":842.2479588423084,"radius":-18,
-                    "startingAngle": 0
+                    "startingAngle": 177
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ShigeruMiyaObt",
                     "x":-11.917522138721095,"y":804.2035612456222,"radius":-16.5,
-                    "startingAngle": 0
+                    "startingAngle": 165
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ShigeruMiyaPoster",
                     "x":-6.073352628386694,"y":816.9232242975272,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 160
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#lynnConwayObit",
                     "x":-15.355268909506037,"y":789.5358416902716,"radius":-18.5,
-                    "startingAngle": 0
+                    "startingAngle": 198
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#lynnConwayPoster1",
                     "x":-9.511099399171636,"y":794.0049124922928,"radius":-17,
-                    "startingAngle": 0
+                    "startingAngle": 200
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#lynnConwayPoster2",
                     "x":-9.281916281119306,"y":790.3379826034546,"radius":-18.5,
-                    "startingAngle": 0
+                    "startingAngle": 195
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonObit",
                     "x":-13.178029288008908,"y":774.8681221349228,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 174
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoster",
                     "x":-10.08405719430246,"y":771.201192246085,"radius":-20.5,
-                    "startingAngle": 0
+                    "startingAngle": 164
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoem",
                     "x":-9.396507840145471,"y":767.8780370343252,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 164
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#DouglisMarrPoem",
                     "x":-7.563042895726816,"y":386.5173285952498,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 120
                 },
                 {
                     "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#HedyLamarrPoster",
                     "x":-1.1459155902615934,"y":399.9245410013115,"radius":-26,
-                    "startingAngle": 0
+                    "startingAngle": 240
                 },
                 {
                     "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#hedyLamarrObit",
                     "x":-4.583662361046535,"y":395.91383643539604,"radius":-28,
-                    "startingAngle": 0
+                    "startingAngle": 224
                 },
                 {
                     "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#missingPoster",
                     "x":-8.479775367936128,"y":405.883302070674,"radius":-24,
-                    "startingAngle": 0
+                    "startingAngle": 273
                 },
                 {
-                    "number": 3,
+                    "number": 5,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-1.7188733853924076,"y":387.0902863903839,"radius":-27,
-                    "startingAngle": 0
+                    "startingAngle": 200
                 },
                 {
                     "number": 3,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-1.1459155902615838,"y":374.1414402204281,"radius":-26,
-                    "startingAngle": 0
+                    "startingAngle": 245
                 },
                 {
                     "number": 2,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-0.3437746770784311,"y":363.5990167900214,"radius":-25,
-                    "startingAngle": 0
+                    "startingAngle": 260
                 },
                 {
                     "number": 4,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-27.08923409463554,"y":-271.3528117739572,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 248
                 },
                 {
                     "number": 6,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-30.4,"y":101.18434662010347,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 90
                 },
                 {
                     "number": 6,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-26,"y":100.15302258886798,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 90
                 },
                 {
                     "number": 6,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-41.4821443674716,"y":144.8437306090728,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 90
                 },
                 {
                     "number": 2,
                     "text": "Stand here",
                     "triggerType": "scene",
                     "x":-12.261296815799628,"y":363.36983367196774,"radius":-19,
-                    "startingAngle": 0
+                    "startingAngle": 270
                 },
                 {
                     "number": 4,
                     "text": "Stand here",
                     "triggerType": "scene",
                     "x":-34.03369303077089,"y":44.57611646117872,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 170
                 },
                 {
                     "number": 1,
                     "text": "Stand here",
                     "triggerType": "scene",
                     "x":-33.8045099127186,"y":362.91146743586313,"radius":-12,
-                    "startingAngle": 0
+                    "startingAngle": 270
                 }
             ]
         },
@@ -211,238 +211,238 @@
                     "triggerType": "walkToImage",
                     "src" : "#danielhaleObit",
                     "x":-8.36518380891002,"y":228.38097713914547,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": -10
                 },
                 {
                     "number": 0,
                     "triggerType": "walkToImage",
                     "src" : "#danielhalePoster",
                     "x":1.2605071492878102,"y":235.02728756266254,"radius":-15,
-                    "startingAngle": 0
+                    "startingAngle": 20
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ceciliaPayneObt",
                     "x":-8.021409131831525,"y":169.82469047677472,"radius":-23,
-                    "startingAngle": 0
+                    "startingAngle": 150
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ceciliaPaynePoster",
                     "x":-3.8961130068895953,"y":164.55347876157137,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 135
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ShigeruMiyaPoster",
                     "x":-5.385803274229743,"y":508.21356428104036,"radius":-18,
-                    "startingAngle": 0
+                    "startingAngle": 110
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maryMahoneyObit",
                     "x":-29.10625599264584,"y":529.871368936985,"radius":-13.5,
-                    "startingAngle": 0
+                    "startingAngle": 165
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maryMahoneyPoster",
                     "x":-18.334649444186358,"y":535.4863553292672,"radius":-14,
-                    "startingAngle": 0
+                    "startingAngle": 160
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#lynnConwayPoster1",
                     "x":-12.032113697747286,"y":134.07212406061285,"radius":-16.5,
-                    "startingAngle": 0
+                    "startingAngle": 140
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#lynnConwayPoster2",
                     "x":-12.032113697747286,"y":126.85285584196461,"radius":-16.75,
-                    "startingAngle": 0
+                    "startingAngle": 135
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#lynnConwayObit",
                     "x":-19.480565034447995,"y":127.31122207806922,"radius":-16.75,
-                    "startingAngle": 0
+                    "startingAngle": 140
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonObit",
                     "x":-20.397297506657313,"y":104.6220933908887,"radius":-16.75,
-                    "startingAngle": 0
+                    "startingAngle": 125
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoster",
                     "x":-16.27200138171538,"y":96.60068425905716,"radius":-16.5,
-                    "startingAngle": 0
+                    "startingAngle": 120
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoem",
                     "x":-15.813635145610723,"y":91.44406410287975,"radius":-16.75,
-                    "startingAngle": 0
+                    "startingAngle": 120
                 },
                 {
-                    "number": 4,
+                    "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#missingPoster",
                     "x":-14.094761760218255,"y":84.45397900228339,"radius":-17,
-                    "startingAngle": 0
+                    "startingAngle": 235
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#DouglisMarrPoem",
                     "x":-19.709748152500328,"y":62.45239966925976,"radius":-14,
-                    "startingAngle": 0
+                    "startingAngle": 90
                 },
                 {
                     "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#HedyLamarrPoster",
                     "x":-3.666929888837259,"y":70.24462568303898,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 205
                 },
                 {
                     "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#hedyLamarrObit",
                     "x":-8.25059224988385,"y":63.483723700495254,"radius":-23,
-                    "startingAngle": 0
+                    "startingAngle": 200
                 },
                 {
                     "number": 3,
                     "triggerType": "walkToImage",
                     "src" : "#stellaYoungPoster2",
                     "x":-5.614986392282063,"y":53.17048338814042,"radius":-23,
-                    "startingAngle": 0
+                    "startingAngle": 270
                 },
                 {
                     "number": 3,
                     "triggerType": "walkToImage",
                     "src" : "#stellaYoungPoster1",
                     "x":-4.469070802020418,"y":49.73273661735548,"radius":-23,
-                    "startingAngle": 0
+                    "startingAngle": 270
                 },
                 {
                     "number": 3,
                     "triggerType": "walkToImage",
                     "src" : "#stellaYoungPoster3",
                     "x":-6.18794418741289,"y":47.784680113910674,"radius":-23,
-                    "startingAngle": 0
+                    "startingAngle": 270
                 },
                 {
                     "number": 3,
                     "triggerType": "walkToImage",
                     "src" : "#stellaYoungObit",
                     "x":-9.511099399171668,"y":48.586821027093826,"radius":-23,
-                    "startingAngle": 0
+                    "startingAngle": 270
                 },
                 {
                     "number": 3,
                     "triggerType": "walkToImage",
                     "src" : "#veraRubinPoster",
                     "x":-2.864788975654114,"y":34.033693030770905,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 227
                 },
                 {
                     "number": 3,
                     "triggerType": "walkToImage",
                     "src" : "#veraRubinObit",
                     "x":-8.136000690857692,"y":32.0856365273261,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 220
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster1",
                     "x":-3.2085636527326034,"y":20.85566374276196,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 245
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster2",
                     "x":0.5729577951308288,"y":-342.05580369310036,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 230
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster3",
                     "x":-0.9167324722093116,"y":-344.80600110972796,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 220
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster4",
                     "x":-3.437746770784936,"y":-341.9412121340742,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 235
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#TawakkolKarmanObit",
                     "x":-7.219268218648373,"y":-343.88926863751874,"radius":-21,
-                    "startingAngle": 0
+                    "startingAngle": 230
                 },
                 {
                     "number": 6,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-25.783100780887082,"y":-890.2618220742814,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 145
                 },
                 {
                     "number": 5,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-31.85645340927381,"y":-1035.6785104784813,"radius":-15,
-                    "startingAngle": 0
+                    "startingAngle": 180
                 },
                 {
                     "number": 2,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-20.16811438860499,"y":-343.3163108423891,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 245
                 },
                 {
                     "number": 3,
                     "text": "Step forward",
                     "triggerType": "scene",
                     "x":-21.42862153789282,"y":-1044.3874689644717,"radius":-17,
-                    "startingAngle": 0
+                    "startingAngle": 230
                 },
                 {
                     "number": 4,
                     "text": "Step forward",
                     "triggerType": "scene",
                     "x":-52.36834247495727,"y":847.0608043214083,"radius":-10,
-                    "startingAngle": 0
+                    "startingAngle": 120
                 },
                 {
                     "number": 0,
                     "text": "Move here",
                     "triggerType": "scene",
                     "x":-31.627270291221457,"y":-144.7291390500459,"radius":-14,
-                    "startingAngle": 0
+                    "startingAngle": -30
                 }
             ]
         },
@@ -509,36 +509,36 @@
                     "triggerType": "walkToImage",
                     "src" : "#karlHeinrichUlrichsObit",
                     "x":-13.865578642165922,"y":502.254803211677,"radius":-17,
-                    "startingAngle": 0
+                    "startingAngle": 180
                 },
                 {
                     "number": 1,
                     "triggerType": "scene",
                     "x":-8.25059224988385,"y":487.930858333407,"radius":-25,
-                    "startingAngle": 0
+                    "startingAngle": 100
                 },
                 {
                     "number": 4,
                     "triggerType": "scene",
                     "x":-6.760901982543707,"y":88.69386668625171,"radius":-26,
-                    "startingAngle": 0
+                    "startingAngle": 180
                 },
                 {
                     "number": 4,
                     "triggerType": "scene",
                     "x":-11.459155902616462,"y":108.17443172069972,"radius":-26,
-                    "startingAngle": 0
+                    "startingAngle": 225
                 },
                 {
                     "number": 6,
                     "triggerType": "scene",
                     "x":-4.354479242994247,"y":96.94445893613556,"radius":-28,
-                    "startingAngle": 0
+                    "startingAngle": 200
                 },
                 {
                    "number": 5,
                     "triggerType": "walkToImage",
-                    "startingAngle": 0,
+                    "startingAngle": -80,
                     "src" : "#alanTuringObit",
                     "x":-23.491269600363747,"y":87.43335953696386,"radius":-15.5
                 },
@@ -548,7 +548,7 @@
                     "triggerType": "walkToImage",
                     "src" : "#AlanTuringPoster",
                     "x":-15.584452027558386,"y":93.50671216535018,"radius":-15.5,
-                    "startingAngle": 0
+                    "startingAngle": -80
                 },
                 {
                   "number": 5,
@@ -556,84 +556,84 @@
                     "triggerType": "walkToImage",
                     "src" : "#missingPoster",
                     "x":-11.917522138721115,"y":66.57769579420146,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 255
                 },
                 {
                     "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#hedyLamarrObit",
                     "x":-8.525401532396865,"y":389.3821175709077,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 230
                 },
                 {
                     "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#HedyLamarrPoster",
                     "x":-1.3750987083139758,"y":-317.1894353844234,"radius":-20.5,
-                    "startingAngle": 0
+                    "startingAngle": 236
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoem",
                     "x":-12.261296815799597,"y":-644.2337448450987,"radius":-20,
-                    "startingAngle": 0
+                    "startingAngle": 130
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoster",
                     "x":-11.917522138721102,"y":-643.0878292548367,"radius":-22,
-                    "startingAngle": 0
+                    "startingAngle": 140
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonObit",
                     "x":-13.521803965087408,"y":-639.4208993659984,"radius":-22.5,
-                    "startingAngle": 0
+                    "startingAngle": 150
                 },
                 {
                     "number": 3,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-51.909976238852614,"y":11.11538122553799,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 300
                 },
                 {
                     "number": 4,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-23.94963583646842,"y":464.5541802920709,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 200
                 },
                 {
                     "number": 1,
                     "text": "Step forward",
                     "triggerType": "scene",
                     "x":-24.178818954520754,"y":124.79020777949302,"radius":-17,
-                    "startingAngle": 0
+                    "startingAngle": 55
                 },
                 {
                     "number": 6,
                     "text": "Step forward",
                     "triggerType": "scene",
                     "x":-16.61577605879387,"y":112.52891096369402,"radius":-27,
-                    "startingAngle": 0
+                    "startingAngle": 250
                 },
                 {
                     "number": 0,
                     "text": "Step forward",
                     "triggerType": "scene",
                     "x":-18.220057885160177,"y":121.3524610087082,"radius":-26,
-                    "startingAngle": 0
+                    "startingAngle": 60
                 },
                 {
                     "number": 5,
                     "text": "Move here",
                     "triggerType": "scene",
                     "x":-41.36755280844547,"y":79.52654196415827,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 250
                 }
             ]
         },
@@ -713,7 +713,7 @@
                 {
                    "number": 1,
                     "triggerType": "walkToImage",
-                    "startingAngle": 0,
+                    "startingAngle": 190,
                     "src" : "#karlHeinrichUlrichsObit",
                     "x":-12.490479933851935,"y":130.29060261274898,"radius":-18
                 },
@@ -722,14 +722,14 @@
                     "triggerType": "walkToImage",
                     "src" : "#missingPoster",
                     "x":-12.261296815799605,"y":53.85803274229742,"radius":-17.5,
-                    "startingAngle": 0
+                    "startingAngle": 265
                 },
                 {
                    "number": 5,
                     "triggerType": "walkToImage",
                     "src" : "#alanTuringObit",
                     "x":-25.09555142673007,"y":83.42265497104792,"radius":-15.5,
-                    "startingAngle": 0
+                    "startingAngle": 280
                 },
                 {
                   "number": 5,
@@ -737,58 +737,59 @@
                     "triggerType": "walkToImage",
                     "src" : "#AlanTuringPoster",
                     "x":-15.584452027558394,"y":89.26682448138233,"radius":-15.5,
-                    "startingAngle": 0
+                    "startingAngle": 280
                 },
                 {
                     "number": 0,
                     "triggerType": "scene",
                     "x": -17.647100090029372,"y": 105.53882586309734,"radius": -25,
-                    "startingAngle": 0
+                    "startingAngle": 65
                 },
                 {
                     "number": 1,
                     "triggerType": "scene",
                     "x": -7.792226013779181,"y": 114.47696746713856,"radius": -20,
-                    "startingAngle": 0
+                    "startingAngle": 135
                 },
                 {
                     "number": 2,
                     "text": "Move back here",
                     "triggerType": "scene",
-                    "x": -65.08800552686145,"y": -198.35798867428863,"radius": -11
+                    "x": -65.08800552686145,"y": -198.35798867428863,"radius": -11,
+                    "startingAngle": 90
                 },
                 {
                     "number": 4,
                     "triggerType": "scene",
                     "x": -11.22997278456412,"y": 92.36079657508864,"radius": -21,
-                    "startingAngle": 0
+                    "startingAngle": 240
                 },
                 {
                     "number": 4,
                     "triggerType": "scene",
                     "x": -12.719663051904183,"y": -294.04194046113696,"radius": -18,
-                    "startingAngle": 0
+                    "startingAngle": 155
                 },
                 {
                     "number": 4,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x": -5.61498639228205,"y": 74.14073868992858,"radius": -20,
-                    "startingAngle": 0
+                    "startingAngle": 195
                 },
                 {
                     "number": 5,
                     "text": "Move back here",
                     "triggerType": "scene",
                     "x": -57.181187954056206,"y": 77.92226013779165,"radius": -11,
-                    "startingAngle": 0
+                    "startingAngle": 280
                 },
                 {
                     "number": 6,
                     "text": "Move here",
                     "triggerType": "scene",
                     "x": -3.4377467707848375,"y": -281.0930942911803,"radius": -28,
-                    "startingAngle": 0
+                    "startingAngle": 220
                 }
             ]
         },
@@ -1099,35 +1100,35 @@
                     "triggerType": "walkToImage",
                     "src" : "#TawakkolKarmanObit",
                     "x":-20.397297506657292,"y":-201.10818609091785,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 85.5
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster1",
                     "x":-12.719663051904256,"y":-190.3365795424586,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 92
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster2",
                     "x":-4.4690708020203935,"y":-196.86829840694992,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 90
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster3",
                     "x":-7.792226013779171,"y":-202.9416510353363,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 87
                 },
                 {
                     "number": 2,
                     "triggerType": "walkToImage",
                     "src" : "#tawakkakolKarmenPoster4",
                     "x":-12.83425461093042,"y":-197.2120730840281,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 90
                 },
                 {
                   "number": 1,
@@ -1135,126 +1136,126 @@
                   "src" : "#margretHamiltonObit",
 
                     "x":-9.281916281119353,"y":54.88935677353289,"radius":-19,
-                    "startingAngle": 0
+                    "startingAngle": 180
                 },
                 {
                   "number": 1,
                   "triggerType": "walkToImage",
                   "src" : "#margretHamiltonPoster1",
                     "x":-2.635605857601797,"y":55.576906127689874,"radius":-19,
-                    "startingAngle": 0
+                    "startingAngle": 221
                 },
                 {
                   "number": 1,
                   "triggerType": "walkToImage",
                   "src" : "#margretHamiltonPoster2",
                   "x":-3.2085636527326207,"y":59.58761069360564,"radius":-19,
-                  "startingAngle": 0
+                  "startingAngle": 180
                 },
                 {
                   "number": 1,
                   "triggerType": "walkToImage",
                   "src" : "#karlHeinrichUlrichsObit",
                   "x":-9.167324722093186,"y":78.15144325584467,"radius":-17,
-                  "startingAngle": 0
+                  "startingAngle": 240
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoem",
                     "x":-10.313240312354818,"y":-8.021409131831529,"radius":-15,
-                    "startingAngle": 0
+                    "startingAngle": 217
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maeJemisonPoster",
                     "x":-9.3965078401455,"y":-5.042028597151246,"radius":-16,
-                    "startingAngle": 0
+                    "startingAngle": 217
                 },
                 {
                   "number": 4,
                   "triggerType": "walkToImage",
                   "src" : "#maeJemisonObit",
                   "x":-11.229972784564136,"y":-0.5729577951308232,"radius":-17,
-                  "startingAngle": 0
+                  "startingAngle": 226
                 },
                 {
                   "number": 4,
                   "triggerType": "walkToImage",
                   "src" : "#lynnConwayObit",
                   "x":-7.104676659622214,"y":367.03676356080433,"radius":-19,
-                  "startingAngle": 0
+                  "startingAngle": 260
                 },
                 {
                   "number": 4,
                   "triggerType": "walkToImage",
                   "src" : "#lynnConwayPoster1",
                   "x":-1.9480565034448019,"y":369.9015525364581,"radius":-19,
-                  "startingAngle": 0
+                  "startingAngle": 265
                 },
                 {
                   "number": 4,
                   "triggerType": "walkToImage",
                   "src" : "#lynnConwayPoster2",
                   "x":-2.2918311805232943,"y":6.531718864491389,"radius":-19,
-                  "startingAngle": 0
+                  "startingAngle": 255
                 },
                 {
                     "number": 0,
                     "triggerType": "walkToImage",
                     "src" : "#danielhaleObit",
                     "x":-3.437746770784939,"y":51.45161000274795,"radius":-24,
-                    "startingAngle": 0
+                    "startingAngle": 170
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maryMahoneyObit",
                     "x":-9.854874076250166,"y":28.074931961410343,"radius":-18.5,
-                    "startingAngle": 0
+                    "startingAngle": 305
                 },
                 {
                     "number": 4,
                     "triggerType": "walkToImage",
                     "src" : "#maryMahoneyPoster",
                     "x":-4.812845479098916,"y":30.022988464855157,"radius":-18.5,
-                    "startingAngle": 0
+                    "startingAngle": 305
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ceciliaPaynePoster",
                     "x":2.406422739549459,"y":13.865578642165916,"radius":-26,
-                    "startingAngle": 0
+                    "startingAngle": 285
                 },
                 {
                     "number": 6,
                     "triggerType": "walkToImage",
                     "src" : "#ceciliaPayneObt",
                     "x":-0.5729577951308232,"y":15.469860468532222,"radius":-27,
-                    "startingAngle": 0
+                    "startingAngle": 300
                 },
                 {
                     "number": 2,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-45.034482697282684,"y":-203.1708341533877,"radius":-11,
-                    "startingAngle": 0
+                    "startingAngle": 90
                 },
                 {
                     "number": 0,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-13.063437728982775,"y":403.47687933112513,"radius":-22,
-                    "startingAngle": 0
+                    "startingAngle": 155
                 },
                 {
                     "number": 1,
                     "text": "Step back",
                     "triggerType": "scene",
                     "x":-22.689128687180606,"y":772.9200656314794,"radius":-15,
-                    "startingAngle": 0
+                    "startingAngle": 170
                 }
             ]
         },
@@ -1284,7 +1285,7 @@
                 },
                 {
                     "triggerType": "image",
-                    "src" : "#ShigeryMiyaObt",
+                    "src" : "#ShigeruMiyaObt",
                     "x":-8.938141604040842,"y":628.4201096994881,"radius":-16
                 },
                 {
