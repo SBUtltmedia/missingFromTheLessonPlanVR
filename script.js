@@ -56,6 +56,7 @@ AFRAME.registerComponent('cursor-listener', {
 
         var startingAngle =markers[marker].startingAngle;
         loadSphere(startingRoom, markers[marker].number, startingAngle,markers[marker].src );
+        console.log(startingAngle);
 
       }
       if (markers[marker].triggerType== "image") {
@@ -92,7 +93,7 @@ function assetsLoaded() {
 
   sceneEl = document.querySelector('a-scene');
   cameraCache=$('#camera');
-  loadSphere(startingRoom, 5, -20.282705947630927, "#missingPoster");
+  loadSphere(startingRoom, 3, -20.282705947630927);
 
   var markers = document.getElementById('markers')
 
@@ -102,8 +103,13 @@ function assetsLoaded() {
 }
 
 function loadSphere(room, sphereNum, angle, startingImage) {
-
+   var cameraRotY=0
     var cameraEl = document.querySelector('#camera');
+    var cameraRot=cameraEl.getAttribute("rotation")
+    if (cameraRot){
+    cameraRotY= cameraRot.y
+  }
+  console.log(cameraRotY,angle, angle -cameraRotY)
     // cameraEl.removeAttribute('camera');
     //cameraEl.removeAttribute('look-controls');
     //cameraEl.removeAttribute('rotation');
@@ -119,15 +125,15 @@ function loadSphere(room, sphereNum, angle, startingImage) {
   // })
   if (!angle) {
     sceneEl.querySelector('#tripod').setAttribute('rotation', {
-      y: 0,
       x: 0,
+      y: 0,
       z: 0
     });
   } else {
 
     sceneEl.querySelector('#tripod').setAttribute('rotation', {
       x: 0,
-      y: angle,
+      y: angle -cameraRotY,
       z: 0
     });
   }
@@ -167,7 +173,7 @@ function getIdFromSrc(src)
 
 for(i=0;i<markers.length;i++)
 {
-
+console.log(markers[i].src)
 if (markers[i].src==src)
 {
 return i;
@@ -185,12 +191,14 @@ function showPoster(src) {
 
   poster.setAttribute("visible", true);
   poster.emit('hudShow');
+  console.log(markers[id],id,src);
   poster.setAttribute('src',markers[id].src );
   poster.setAttribute('rotation', {
     x: markers[id].x,
     y: markers[id].y
-  });
 
+  });
+//recreateCamera(startingAngle)
 }
 
 function showMovie(src) {
@@ -206,6 +214,11 @@ function showMovie(src) {
 
 
 }
+
+// function recreateCamera(startingAngle){
+//
+//   document.querySelector('#tripod').removeChild(document.querySelector('#camera'))
+// }
 
 
 
