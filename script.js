@@ -36,8 +36,9 @@ AFRAME.registerComponent('cursor-listener', {
 
 
 
-      if($(evt.target).attr("id")=="closeBtn"){
-    hudHide(currentLocation)
+      if($(evt.target).attr("class")=="closeBtn"){
+        hudHide(evt.target.parentNode)
+        makeMarkers(currentLocation)
 
       }
       else{
@@ -50,7 +51,8 @@ AFRAME.registerComponent('cursor-listener', {
       if (markers[marker].triggerType == "walkToImage" ||markers[marker].triggerType== "scene") {
 
         if(markers[marker].triggerType== "scene"){
-              hudHide(currentLocation)
+              hudHide(evt.target.parentNode)
+              makeMarkers(currentLocation)
         }
 
 
@@ -74,15 +76,14 @@ AFRAME.registerComponent('cursor-listener', {
 });
 
 
-
-
-function hudHide(currentLocation){
-console.log(currentLocation)
-  var hudA = sceneEl.querySelector('#posterHud');
+function hudHide(parent){
+  var hudA = sceneEl.querySelector('#'+parent.id);
   hudA.emit('hudHide');
   hudA.setAttribute("visible", false);
-  makeMarkers(currentLocation)
-
+  console.log()
+  if (hudA.getAttribute("type") == "video/mp4"){
+     sceneEl.querySelector(hudA.getAttribute("src")).pause();
+   }
 }
 
 function leftPad(num) {
@@ -210,7 +211,7 @@ function showMovie(src) {
   video.setAttribute("visible", true);
   video.emit('vidShow');
   //ˆvideo.setAttribute('src',markers[id].src);
-  video.play()
+
 
 
 }
