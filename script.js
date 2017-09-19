@@ -94,7 +94,7 @@ function assetsLoaded() {
 
   sceneEl = document.querySelector('a-scene');
   cameraCache=$('#camera');
-  loadSphere(startingRoom, 3, -20.282705947630927);
+  loadSphere(startingRoom, 5, -20.282705947630927, "#missingPoster");
 
   var markers = document.getElementById('markers')
 
