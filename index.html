@@ -78,7 +78,11 @@
     </a-assets>
 <a-entity id="tripod">
         <a-entity camera   id="camera"  look-controls postition="0 0 0" >
-            <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 1000" scale="0.3 0.3 0.3" position="0 0 -0.3" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat">
+          <a-entity position="0 0 -5"
+                    geometry="primitive: ring; radiusOuter: 0.30;
+                              radiusInner: 0.20;"
+                    material="color: red; shader: flat"
+                    cursor="maxDistance: 30"></a-entity>
 
                 <a-animation begin="fusing" easing="ease-in" dur="1000" attribute="scale" fill="none" to="0.1 0.1 0.1"></a-animation>
                 <a-animation begin="click" easing="ease-in" attribute="scale" to="0.3 0.3 0.3"></a-animation>
