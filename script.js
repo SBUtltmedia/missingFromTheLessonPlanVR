@@ -48,10 +48,10 @@ AFRAME.registerComponent('cursor-listener', {
 
 
 
-      if (markers[marker].triggerType == "walkToImage" ||markers[marker].triggerType== "scene") {
+      if (markers[marker].triggerType == "walkToImage" ||markers[marker].triggerType == "scene") {
 
-        if(markers[marker].triggerType== "scene"){
-              hudHide(evt.target.parentNode)
+        if(markers[marker].triggerType == "scene"){
+              hudHide(sceneEl.querySelector('#posterHud'));
               makeMarkers(currentLocation)
         }
 
@@ -77,6 +77,7 @@ AFRAME.registerComponent('cursor-listener', {
 
 
 function hudHide(parent){
+  console.log(parent)
   var hudA = sceneEl.querySelector('#'+parent.id);
   hudA.emit('hudHide');
   hudA.setAttribute("visible", false);
@@ -237,12 +238,12 @@ function makeMarker(mkr, id) {
     //  var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
     var marker = document.createElement('a-sphere');
     marker.setAttribute('color', "#2fff00");
-    marker.setAttribute('radius', "0.2");
+    marker.setAttribute('radius', "5");
     marker.setAttribute('opacity', ".7");
 
   } else {
     var marker = document.createElement('a-sphere');
-    marker.setAttribute('radius', "0.2")
+    marker.setAttribute('radius', "5")
     marker.setAttribute('color', "#f10e0e")
     marker.setAttribute('opacity', ".7")
   }
