@@ -238,12 +238,12 @@ function makeMarker(mkr, id) {
     //  var spin = Math.atan2(mkr.x, mkr.z) * (180 / Math.PI) + 180;
     var marker = document.createElement('a-sphere');
     marker.setAttribute('color', "#2fff00");
-    marker.setAttribute('radius', "5");
+    marker.setAttribute('radius', ".2");
     marker.setAttribute('opacity', ".7");
 
   } else {
     var marker = document.createElement('a-sphere');
-    marker.setAttribute('radius', "5")
+    marker.setAttribute('radius', ".2")
     marker.setAttribute('color', "#f10e0e")
     marker.setAttribute('opacity', ".7")
   }
