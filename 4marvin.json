@@ -630,6 +630,8 @@
                 {
                     "triggerType": "video",
                     "src" : "#testVideo",
+                    "posX": -6.053, "posY": -0.066, "posZ": 6.338,
+                    "rotX": 0, "rotY": 180, "rotZ": -2,
                     "x": -1.3750987083140267,"y": 497.78573240965335,"radius": -10.858
                 },
                 {
@@ -762,6 +764,8 @@
                 {
                     "triggerType": "video",
                     "src" : "#testVideo",
+                    "posX": -6.837, "posY": 0.373, "posZ": 4.8,
+                    "rotX": 0, "rotY": 95, "rotZ": 1,
                     "x": 1.1459155902616833,"y": 120.77950321357754,"radius": -10.858
                 },
                 {

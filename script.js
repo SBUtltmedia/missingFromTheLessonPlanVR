@@ -206,11 +206,23 @@ function showPoster(src) {
 function showMovie(src) {
 
   var id = getIdFromSrc(src);
-
+  console.log(markers[id],id,src);
   var video = document.getElementById('vidHud')
 
   video.setAttribute("visible", true);
   video.emit('vidShow');
+  video.setAttribute('position', {
+    x: markers[id].posX,
+    y: markers[id].posY,
+    z: markers[id].posZ,
+
+  });
+  video.setAttribute('rotation', {
+    x: markers[id].rotX,
+    y: markers[id].rotY,
+    z: markers[id].rotZ,
+
+  });
   //ˆvideo.setAttribute('src',markers[id].src);
 
 
