@@ -50,6 +50,8 @@ AFRAME.registerComponent('cursor-listener', {
 
       if (markers[marker].triggerType == "walkToImage" ||markers[marker].triggerType == "scene") {
 
+        hudHide(sceneEl.querySelector('#vidHud'));
+
         if(markers[marker].triggerType == "scene"){
               hudHide(sceneEl.querySelector('#posterHud'));
               makeMarkers(currentLocation)
