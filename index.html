@@ -74,7 +74,7 @@
       <img id="HedyLamarrPoster" src="img/marvin/posters/HedyLamarrPoster.png">
       <img id="missingPoster" src="img/marvin/posters/MissingFromTheLessonPlan.png">
       <img id="karlHeinrichUlrichsObit" src="img/marvin/posters/karlHeinrichUlrichsObit.png">
-      <video id="testVideo" src="img/marvin/posters/karl.webm">
+          <video id="testVideo" src="img/marvin/posters/karl.webm"></video>
     </a-assets>
 <a-entity id="tripod">
         <a-entity camera   id="camera"  look-controls postition="0 0 0" >
@@ -107,8 +107,8 @@
         <a-box cursor-listener class="closeBtn" position="-1.606 1.806 -1.269" rotation="10 15 45" scale=".855 .285 .855" depth="0.1025" height="0.81" width="0.81" color="#be68e8"></a-box>
       </a-curvedimage>
 
-        <a-video id="vidHud" src="#testVideo" type="video/mp4" muted loop playsinline webkit-playsinline material="transparent: true; opacity: 0.9" width="2" height="1" scale="0 0 0" position="-19.127 1.097 12.456" rotation="1.031 95.455 0.745">
-          <a-entity video-controls="src:#testVideo"></a-entity>
+        <a-video video-clicked id="vidHud" src="#testVideo" type="video/mp4" muted loop playsinline webkit-playsinline material="transparent: true; opacity: 0.9" width="2" height="1" scale="0 0 0" position="-19.127 1.097 12.456" rotation="1.031 95.455 0.745">
+        
           <a-animation id="vidShow" begin="vidShow" attribute="scale" from="0 0 0" to="3 3 3" dur="900"></a-animation>
           <a-animation id="vidHide" begin="hudHide" attribute="scale" from="3 3 3" to="0 0 0"></a-animation>
           <a-box cursor-listener class="closeBtn" position="-0.945 0.574 0.132" rotation="0 0 -45" scale="0.5 0.166 0.5" depth="0.05" height="0.2" width="0.2" color="#be68e8"></a-box>
@@ -126,5 +126,15 @@
 
 
 </body>
-
+<script>
+window.setTimeout(function(){
+document.querySelector('canvas').addEventListener('click', function () {
+  console.log("hit");
+  document.querySelector('video').play();
+});
+    
+    },4000)
+</script>
+    
+    
 </html>

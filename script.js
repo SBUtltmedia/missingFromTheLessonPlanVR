@@ -7,6 +7,7 @@ $(function() {
   document.querySelector('a-assets').addEventListener('loaded', assetsLoaded)
   $('#loader').spin('large', '#FF0000')
 
+
   $("html").on("click", function() {
     var o = {}
     o.x = sceneEl.querySelector('#camera').getAttribute('rotation').x;
@@ -27,6 +28,18 @@ $(function() {
 //     });
 //   }
 // });
+
+AFRAME.registerComponent('video-clicked', {
+      init: function() {
+    console.log("cawfee")
+        console.log(this)
+        this.el.addEventListener('click', function(evt) {
+    console.log("cawfee")
+    var video= document.querySelector('#vidHud');
+  ///  video.play()
+        });
+      }
+    });
 
 
 AFRAME.registerComponent('cursor-listener', {
@@ -95,6 +108,10 @@ function leftPad(num) {
 
 function assetsLoaded() {
 
+    
+     
+
+    
   sceneEl = document.querySelector('a-scene');
   cameraCache=$('#camera');
   loadSphere(startingRoom, 5, -20.282705947630927, "#missingPoster");
